@@ -1,0 +1,4805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Teko:wght@400;500;700&display=swap">
+  <title>Document</title>
+    <style>
+    /*----------*/
+    
+
+      
+    
+     
+     * a{
+      all: unset;
+     }
+
+     .fang{
+      height: 50vw;
+     }
+      
+     body{
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      overflow-x: hidden;
+      gap: 5vw;
+     }
+
+/*------------header*/
+     header{
+      width: 100vw;
+      display: flex;
+      background-color: white;
+      justify-content: space-between;
+      position: fixed;
+      flex-direction: column;
+      z-index: 999;
+      
+
+      
+     }
+        .a1{
+     font-family:popins;
+     font-size: 4vw;
+     margin-left: 2vw;
+     font-style: Sans-serif;
+     }
+     .yg{
+      display: flex;
+      justify-content: space-between;
+     }
+
+
+     header button{
+      all: unset;
+      width: 5vw;
+      height: 5vw;
+      cursor: pointer;
+      margin-right: 4vw;
+      font-size: 3vw;
+      display: flex;
+     }
+
+
+     .oju2{
+      margin-right: 2vw;
+     }
+
+     /*--------------------------*/
+
+     .home{
+      animation: bgSwitch 8s infinite;
+      width: 100vw;
+      height: 60vw;
+      transition: opacity 0.5s ease-in-out;
+      transform: 0.6s ease-in-out;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+
+     }
+
+     .a2{
+
+      font-family: 'Teko', sans-serif;
+
+      font-size: 6vw;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bolder;
+      margin-left: 2vw;
+      margin-top: 15vw;
+      text-shadow: 1px 1px 2px black;
+      
+      
+     }
+     .a3{
+      font-family: 'Teko', sans-serif;
+
+      font-size: 6vw;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bolder;
+      margin-left: 2vw;
+      margin-top: 1vw;
+      text-shadow: 1px 1px 2px black;
+      
+     }
+     .a2, .a3{
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 4s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+      width: 0;
+     }
+     @keyframes typing {
+     0%{
+      width: 0;
+
+     }
+     50%{
+      width: 20ch;
+     }
+
+      100%{
+        width: 0;
+      }
+      }
+
+
+@keyframes typing4 {
+     0%{
+      height: 0;}
+
+      50%{
+        height: 50%;
+        width: 20ch;
+      }
+
+
+      100%{
+        height:100%;
+        width: 20ch;
+      }
+      }
+      
+
+
+      .a1 span{
+        color:rgb(235, 123, 100);}
+
+      @keyframes blink-caret {
+        from, to {
+          border-color: transparent;
+        }
+
+        50% {
+          border-color: black;
+        }
+      }
+     
+      @keyframes bgSwitch {
+        0%, 49% {
+          background-image: url('images/a11.avif');
+        }
+        50%, 100% {
+          background-image: url('images/a13.avif');
+        }
+        
+      }
+     
+
+      .home button {
+        
+        background-color:rgb(235, 123, 100);
+        color: white;
+        border: none;
+        padding: 1vw 2vw;
+        font-size: 2vw;
+        cursor: pointer;
+        margin-top: 2vw;
+        text-transform: uppercase;
+        margin-left: 2vw;
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans',sans-serif;
+      }
+      .home button img {
+        width: 3vw;
+        height: 3vw;
+        margin-left: 1vw;
+      }
+
+      .hh1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2vw;
+        width: 50%;
+        text-align: left;
+        animation: moveText 8s linear infinite;
+      }
+
+      .a4 {
+        
+        font-size: 2vw;
+        color: white;
+        margin-top: 1vw;
+        margin-left: 2vw;
+        text-transform: capitalize;
+        font-weight: bolder;
+        text-shadow: 1px 1px 2px black;
+         font-family: 'Open Sans',sans-serif;
+        animation: typing4  1s steps(10, start)
+
+      }
+/*---------------------------*/
+
+ /*---------------about---*/
+    .t1{
+      font-size: 4vw;
+      text-transform: capitalize;
+      margin-left: 1vw;
+      font-weight: bolder;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      font-family: 'Teko', sans-serif;
+
+      
+    }
+
+    .t1 div{
+      margin-left: 1vw;
+      background-color: rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+    .t2{
+      font-size: 2vw;
+      width: 50vw;
+      margin-left: 1vw;
+      font-weight: lighter;
+      
+       font-family: 'Open Sans',sans-serif;
+    }
+
+    .t3{
+      font-size: 2vw;
+      margin-left: 1vw;
+      font-family:'Open Sans',sans-serif;
+    }
+
+    .about{
+      padding-top: 5vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+      padding-bottom: 5vw;
+    }
+
+    .about button{
+      background-color: white;
+      height: 5vw;
+      width: 30vw;
+      font-size: 3vw;
+      text-transform: capitalize;
+      display: flex;
+      gap: 1vw;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1vw;
+      border: 1px solid rgb(235, 123, 100);
+      font-family:'Open Sans',sans-serif;
+    }
+
+    .about button img{
+      width: 5vw;
+
+    }
+
+
+
+
+
+
+
+ /*---------------aboutend---*/
+
+
+ /*******---------------style------*/
+
+   .s1{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+   }
+
+ .s1 img{
+  width: 45vw;
+  border-radius: 1vw;
+
+ }
+
+ .style{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vw;
+  padding-top: 5vw;
+ }
+ /*******---------------styleends------*/
+
+/*-------------------------info-----------*/
+   .info{
+    background-image: url(images/rrfvr5drv5vr.jpg);
+    width: 100vw;
+    height:90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+    gap: 3vw;
+    padding-bottom: 3vw;
+    background-size: cover;
+   }
+
+     .i1a:hover{
+      background-color: rgb(235, 123, 100);
+      .i1 div{
+        border-right: 1px solid white;
+      }
+
+    }
+     .i1a{
+      transition: background-color 1.5s ease;
+    }
+
+
+
+   .i1 div img{
+    width: 13vw;
+    background-color: rgb(235, 123, 100);
+    border-radius: 1vw 0 0 1vw;
+    height:13vw;
+   }
+   .i1a{
+    width: 90vw;
+    border-radius: 2vw;
+    background-color:rgb(230, 230, 230);
+
+    height:13vw;
+    
+   }
+
+  
+     
+
+   .sup{
+    width: 97vw;
+    margin-top: 50vw;
+    
+   }
+
+   #cc{
+        margin-top: 0vw;
+
+   }
+     .omo p{
+      font-size: 2vw;
+     }
+
+
+   .ainfo img{
+    width: 100vw;
+    height: auto
+   
+   }
+
+   .f1{
+    font-size: 4vw;
+    margin-left: 1vw;
+    font-family: 'Teko', sans-serif;
+   }
+
+   .dk p{
+    font-size: 2vw;
+     font-family: 'Open Snans', sans-serif;
+    margin-left: 1vw;
+    width: 90vw;
+   }
+
+   .f1 div{
+      margin-left: 1vw;
+      background-color: rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+  .i1a{
+    display: flex;
+    
+  
+  }
+   .omo{
+    margin-top: 1vw;
+    margin-left: 1vw;
+   }
+   .omo1{
+    font-size: 3vw;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-family: 'Teko', sans-serif;
+   }
+
+
+
+/*-------------------------infoends-----------*/
+
+    /*-------prices-----*/
+      .prices{
+        margin-top: 50vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+      }
+
+         .p1{
+          font-size: 4vw;
+          margin-left: 2vw;
+          text-transform: capitalize;
+          font-weight: bolder;
+          font-family: 'Teko', sans-serif;
+         }
+
+         .p1 div{
+      margin-left: 1vw;
+      background-color: rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+
+    .p2{
+      display: flex;
+      background-image: url(images/a14.avif);
+      width: 90vw;
+      height: 70vw;
+      border-radius: 1vw;
+       background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .p1a{
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .p3{
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 90vw;
+      height: 70vw;
+      border-radius: 1vw;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    .p4{
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+    }
+    .p41a{
+      text-transform: capitalize;
+      font-size: 3vw;
+      font-family: 'Teko', sans-serif;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .p41c{
+      color: white;
+      font-size: 2vw;
+    }
+
+
+    .p41 hr{
+      height:0.5px;
+      
+    }
+
+
+    .pl{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1vw;
+       font-size: 3vw;
+       font-family: 'Teko', sans-serif;
+      
+       text-transform: capitalize;
+       color: white;
+       margin-left: 56.5vw;
+       font-weight: bolder;
+
+    }
+
+    .pl img{
+      width: 5vw;
+      color: white;
+    }
+
+    /*-------pricesends-----*/
+
+    /*--------------schedule-----*/
+
+      .schedule{
+        padding-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+      }
+
+
+
+
+     .s0{
+          display: flex;
+          flex-direction: column;    
+          font-size: 4vw;
+          margin-left: 2vw;
+          text-transform: capitalize;
+          font-weight: bolder;
+          font-family: 'Teko', sans-serif;
+      
+         }
+
+         .s0 div{
+      margin-left: 1vw;
+      background-color: rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+
+    .s2{
+      display: flex;
+      background-image: url(images/a14.avif);
+      width: 90vw;
+      height: 70vw;
+      border-radius: 1vw;
+       background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .s3{
+          display: flex;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 90vw;
+      height: 70vw;
+      border-radius: 1vw;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+     .s1a{
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+        .s4{
+      width: 85vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+    }
+    .s41a{
+      text-transform: capitalize;
+      font-size: 2.5vw;
+      display: flex;
+      font-family: 'Teko', sans-serif;
+      justify-content: space-between;
+      color: white;
+      padding-bottom: 2vw;
+    }
+
+    .s41c{
+      color: white;
+      font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+      
+    }
+
+
+    .s41 hr{
+      height:0.5px;
+      
+    }
+
+    .s41ab{
+      text-transform: capitalize;
+      font-size: 2.5vw;
+      display: flex;
+      font-family: 'Teko', sans-serif;
+      justify-content: space-between;
+      color: white;
+    }
+
+
+    .s4af{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+    .s41cb{
+      color: white;
+      padding-bottom: 1.5vw;
+      font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+    }
+
+    .s41bb button{
+      all: unset;
+      background-color:rgb(235, 123, 100);
+      padding: 1vw;
+
+
+    }
+
+
+    .s41bbc button{
+      all: unset;
+      text-transform: capitalize;
+      border: 1px solid  white;
+      padding: 1vw;
+    }
+      .s4af img{
+        width: 4vw;
+      }
+
+
+    /*--------------scheduleends-----*/
+
+   /*-----------unknown-----*/
+    .unknown{
+      display: flex;
+      height: 30vw;
+      flex-direction: column;
+      gap: 1vw;
+      width: 100vw;
+      background-image:url(images/a29.avif) ;
+      margin-top: 7vw;
+       background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .u1{
+      color: white;
+      font-size: 4vw;
+      text-transform: capitalize;
+      font-family: 'Teko', sans-serif;
+      margin-left: 1vw;
+      padding-top: 3vw;
+      font-weight: bolder;
+    }
+
+    .u2{
+      color:rgb(235, 123, 100);
+      font-size: 3vw;
+      margin-left: 1vw;
+      font-family: 'Open Snans', sans-serif;
+    }
+
+   .unknown p{
+    margin-left: 1vw;
+    font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+   }
+   .u3{
+    color: white;
+    font-weight: bolder;
+    font-size: 3vw;
+    display: flex;
+    gap: 2vw;
+    margin-left: 1vw;
+    font-family: 'Teko', sans-serif;
+
+   }
+
+   .u3 button{
+    color: white;
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border: 1px solid white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+   
+
+   }
+
+     .u3 span{
+      color: rgb(235, 123, 100);
+      margin-top: 1vw;
+     }
+
+
+
+
+   .u3 button img{
+    width: 3vw;
+   }
+
+
+
+
+   /*-----------unknownend-----*/
+
+     /*------------haircuts------*/
+       .h1{
+        width: 45vw;
+        background-image: url(images/a28.avif);
+        height: 60vw;
+        border-radius: 1vw;
+         background-size: cover;
+        background-repeat: no-repeat;
+
+        
+       }
+
+        .h2{
+           width: 45vw;
+        background-image: url(images/a30.avif);
+        height: 60vw;
+        border-radius: 1vw;
+         background-size: cover;
+        background-repeat: no-repeat;
+
+
+        }
+
+       .haircut{
+        gap: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vw;
+        padding-bottom: 5vw;
+       }
+
+       .h1a{
+        text-transform: capitalize;
+        color: white;
+        font-size: 3.5vw;
+        margin-left: 1vw;
+        margin-top: 40vw;
+        font-family: 'Teko', sans-serif;
+      
+       }
+       .h1 p{
+        color: white;
+        margin-left: 1vw;
+        font-size: 2.5vw;
+      font-family: 'Open Snans', sans-serif;
+       }
+
+       .h1  button{
+
+        
+        all: unset;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+        text-transform: capitalize;
+        margin-left: 1vw;
+       }
+
+       .h1 button img{
+        width: 3vw;
+       }
+       .h1 button:active{
+        color: rgb(235, 123, 100);
+       }
+       .h1 button:hover{
+        color: rgb(235, 123, 100);
+       }
+
+       .h1 button::after{
+        color: rgb(235, 123, 100);
+       }
+
+
+     
+     .book{
+      display:none;
+      
+     }
+
+     .sook{
+        animation: upM 1s ease-out;
+     }
+
+
+     @keyframes upM{
+      from{
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to{
+        transform: translateY(0);
+        opacity: 1;
+      }
+     }
+     .lb{
+      color: white;
+     }
+
+     .fook{
+      color: rgb(235, 123, 100);
+     }
+
+
+      .pook{
+      display:none;
+      
+     }
+
+     .gook{
+        animation: upM 1s ease-out;
+     }
+
+
+     @keyframes upM{
+      from{
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to{
+        transform: translateY(0);
+        opacity: 1;
+      }
+     }
+     .lb{
+      color: white;
+     }
+
+     .fook{
+      color: rgb(235, 123, 100);
+     }
+
+
+      .h2a{
+        text-transform: capitalize;
+        color: white;
+        font-size: 3.5vw;
+        margin-left: 1vw;
+        margin-top: 40vw;
+        font-family: 'Teko', sans-serif;
+      
+      
+       }
+       .h2 p{
+        color: white;
+        margin-left: 1vw;
+        font-size: 2.5vw;
+      font-family: 'Open Snans', sans-serif;
+       }
+
+       .h2  button{
+
+        
+        all: unset;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        font-size: 2vw;
+        text-transform: capitalize;
+        margin-left: 1vw;
+      font-family: 'Open Snans', sans-serif;
+       }
+
+       .h2 button img{
+        width: 3vw;
+       }
+       .h2 button:active{
+        color: rgb(235, 123, 100);
+       }
+       .h2 button:hover{
+        color: rgb(235, 123, 100);
+       }
+
+
+
+
+     /*------------haircutsends------*/
+
+     /*-------work------*/
+
+        .work1{
+          text-transform: capitalize;
+          font-size: 4vw;
+          margin-left: 1vw;
+          display: flex;
+          flex-direction: column;
+          gap: 1vw;
+           font-family: 'Teko', sans-serif;
+        }
+
+        .work2{
+          font-size: 2vw;
+          margin-left: 1vw;
+      font-family: 'Open Snans', sans-serif;
+
+        }
+          .work3{
+             all: unset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgb(235, 123, 100);
+            padding: 1vw;
+            text-transform: capitalize;
+            margin-left: 1vw;
+            gap: 1vw;
+            font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+
+          }
+          .work3 img{
+            width: 3vw;
+          }
+
+          .work1 div{
+      margin-left: 1vw;
+      background-color: rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+
+
+
+
+
+
+
+
+
+     .works{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3vw;
+     }
+
+
+     .wok{
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+      margin-top: 2vw;
+     }
+       
+       .wok1{
+        width: 45vw;
+        height: 60vw;
+        background-image: url(images/a27.avif);
+        border-radius: 1vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+       }
+
+       .wok1aa{
+        text-transform: capitalize;
+        color: white;
+        font-size: 3vw;
+        font-weight: bolder;
+        margin-top: 40vw;
+        margin-left: 1vw;
+        font-family: 'Teko', sans-serif;
+    
+       }
+
+       .wok1 p{
+        color: white;
+        margin-left: 1vw;
+        font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+
+       }
+       .wok1 button{
+        
+        all: unset;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        gap: 1vw;
+        font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+
+       }
+
+       .wok1 button img{
+        width: 3vw;
+       }
+
+
+       .wok2{
+        width: 45vw;
+        height: 60vw;
+        background-image: url(images/a18.avif);
+        border-radius: 1vw;
+         background-size: cover;
+        background-repeat: no-repeat;
+
+       }
+       .wok2aa{
+        text-transform: capitalize;
+        color: white;
+        font-size: 3vw;
+        font-weight: bolder;
+        margin-top: 40vw;
+        margin-left: 1vw;
+        font-family: 'Teko', sans-serif;
+       }
+
+       .wok2 p{
+        color: white;
+        margin-left: 1vw;
+        font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+
+       }
+       .wok2 button{
+        all: unset;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        gap: 1vw;
+        font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+       }
+
+       .wok2 button img{
+        width: 3vw;
+       }
+       p, button{
+      font-family: 'Open Snans', sans-serif;
+       }
+      
+        .wok3{
+        width: 45vw;
+        height: 60vw;
+        background-image: url(images/a13.avif);
+        border-radius: 1vw;
+         background-size: cover;
+        background-repeat: no-repeat;
+
+       }
+       .wok3aa{
+        text-transform: capitalize;
+        color: white;
+        font-size: 3vw;
+        font-weight: bolder;
+        margin-top: 40vw;
+        margin-left: 1vw;
+        font-family: 'Teko', sans-serif;
+      
+       }
+
+       .wok3 p{
+        color: white;
+        margin-left: 1vw;
+        font-size: 2vw;
+
+       }
+       .wok3 button{
+        all: unset;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        gap: 1vw;
+        font-size: 2vw;
+
+       }
+
+       .wok3 button img{
+        width: 3vw;
+       }
+
+
+       .wok4{
+        width: 45vw;
+        height: 60vw;
+        background-image: url(images/mintosko-GZN-6X85_Jw-unsplash.jpg);
+        border-radius: 1vw;
+         background-size: cover;
+        background-repeat: no-repeat;
+
+       }
+       .wok4aa{
+        text-transform: capitalize;
+        color: white;
+        font-size: 3vw;
+        font-weight: bolder;
+        margin-top: 40vw;
+        margin-left: 1vw;
+        font-family: 'Teko', sans-serif;
+       }
+
+       .wok4 p{
+        color: white;
+        margin-left: 1vw;
+        font-size: 2vw;
+
+       }
+       .wok4 button{
+        all: unset;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1vw;
+        gap: 1vw;
+        font-size: 2vw;
+
+       }
+
+       .wok4 button img{
+        width: 3vw;
+       }
+      
+        .rook{
+        animation: upM 1s ease-out;
+     }
+
+
+     @keyframes upM{
+      from{
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to{
+        transform: translateY(0);
+        opacity: 1;
+      }
+     }
+
+      
+     .wok1a, .wok2a, .wok3a, .wok4a{
+      display: none;
+     }
+     /*-------workends------*/
+
+    /*--------team----*/
+       .team{
+        margin-top: 5vw;
+       }
+        .lmao{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 3vw;
+        }
+
+     .m1{
+      font-size: 3vw;
+      margin-left: 1vw;
+      text-transform: capitalize;
+      font-weight: bolder;
+       display: flex;
+          flex-direction: column;
+          gap: 1vw;
+          font-family: 'Teko', sans-serif;
+     } 
+
+     .m2{
+      font-size: 2vw;
+      margin-left: 1vw;
+      width: 50vw;
+      font-family: 'Open Snans', sans-serif;
+
+     }
+
+      .m1 div{
+      margin-left: 1vw;
+      background-color: rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+
+
+
+
+    /*--------teamends----*/
+
+
+     /*------dedicate-----*/
+      
+     .meat{
+      display: flex;
+      gap: 2vw;
+      margin-left: 3vw;
+     }
+     .team2{
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+     }
+     .team button{
+        all: unset;
+        border: 1px solid rgb(235, 123, 100);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 1vw;
+        margin-left: 1vw;
+        margin-top: 3vw;
+        padding: 0.5vw;
+        text-transform: capitalize;
+        font-size: 2vw;
+        width: 20vw;
+      
+      font-family: 'Open Snans', sans-serif;
+        display: none;
+       }
+       .team button img{
+        width: 3vw;
+       }
+
+     .team3{
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+     }
+
+      .te1{
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        background-image: url(images/jurica-koletic-7YVZYZeITc8-unsplash.jpg);
+         background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .te1a{
+        background-color: rgb(235, 123, 100);
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .te1b{
+        font-size: 3vw;
+        color: white;
+        text-transform: capitalize;
+        font-family: 'Teko', sans-serif;
+
+      }
+      .te1c{
+        font-size: 2vw;
+        text-align: center;
+        color: white;
+      font-family: 'Open Snans', sans-serif;
+      }
+
+.te2{
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        background-image: url(images/vicky-hladynets-C8Ta0gwPbQg-unsplash.jpg);
+         background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .te2a{
+        background-color: rgb(235, 123, 100);
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .te2b{
+        font-size: 3vw;
+        color: white;
+        text-transform: capitalize;
+        font-family: 'Teko', sans-serif;
+      
+
+      }
+      .te2c{
+        font-size: 2vw;
+        text-align: center;
+        color: white;
+      font-family: 'Open Snans', sans-serif;
+      }
+
+      .te3{
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(images/alexander-hipp-iEEBWgY_6lA-unsplash.jpg);
+      }
+      .te3a{
+        background-color: rgb(235, 123, 100);
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .te3b{
+        font-size: 3vw;
+        color: white;
+        text-transform: capitalize;
+        font-family: 'Teko', sans-serif;
+      
+
+      }
+      .te3c{
+        font-size: 2vw;
+        text-align: center;
+        color: white;
+      font-family: 'Open Snans', sans-serif;
+      }
+
+      .te4{
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        background-image: url(images/craig-mckay-jmURdhtm7Ng-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .te4a{
+        background-color: rgb(235, 123, 100);
+        width: 40vw;
+        height: 40vw;
+        border-radius: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .te4b{
+        font-size: 3vw;
+        color: white;
+        text-transform: capitalize;
+        font-family: 'Teko', sans-serif;
+      
+
+      }
+      .te4c{
+        font-size: 2vw;
+        text-align: center;
+        color: white;
+      font-family: 'Open Snans', sans-serif;
+      }
+
+     .z1{
+      display: none;
+     }
+
+      .z2{
+      display: none;
+     }
+     .z3{
+      display: none;
+     }
+     .z4{
+      display: none;
+     }
+
+      .zook{
+        animation: upM 1s ease-out;
+     }
+
+
+     @keyframes upM{
+      from{
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to{
+        transform: translateY(0);
+        opacity: 1;
+      }
+     }
+
+     /*------dedicateends-----*/
+
+      /*-----meme-----*/
+       .meme button{
+        all: unset;
+        border: 1px solid rgb(235, 123, 100);
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 1vw;
+        margin-left: 1vw;
+        margin-top: 3vw;
+        padding: 0.5vw;
+        text-transform: capitalize;
+        font-size: 2vw;
+        width: 20vw;
+      font-family: 'Open Snans', sans-serif;
+       }
+       .meme button img{
+        width: 3vw;
+       }
+         .meme2{
+          width: 100vw;
+          background-image: url(images/hgdgff.jpg);
+          background-size: cover;
+          height: 60vw;
+          background-repeat: no-repeat;
+         }
+           .meme{
+            display: flex;
+            flex-direction: column;
+           }
+
+      /*-----memeend-----*/
+
+        /*---------comments---*/
+        .comm1{
+          font-size: 3vw;
+          margin-left: 1vw;
+          text-transform: capitalize;
+          display: flex;
+          flex-direction: column;
+          gap: 1vw;
+          font-family: 'Teko', sans-serif;
+
+        }
+          .comment{
+            margin-top: 5vw;
+          }
+
+          .comm1 div{
+      margin-left: 1vw;
+      background-color: rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+
+    .comm2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+
+    }
+
+    .comm2 p{
+      margin-left: 1vw;
+      font-size: 2vw;
+      width: 60vw;
+      font-family: 'Open Snans', sans-serif;
+    }
+       .comm2 button{
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw;
+        border: 1px solid rgb(235, 123, 100);
+        margin-right: 3vw;
+        font-size: 2vw;
+        gap: 1vw;
+      font-family: 'Open Snans', sans-serif;
+       }
+
+
+       .comm2 button img{
+        width: 3vw;
+       }
+
+     .comm3{
+      display: flex;
+       gap: 4vw;
+      justify-content:center;
+      align-items: center;
+      margin-top: 3vw;
+
+     }
+
+     .comm31{
+      width: 40vw;
+      height: 30vw;
+      height: auto;
+      box-shadow: 4px 4px 4px px white;
+      border: 1px solid rgb(230, 230, 230);
+      border-radius: 1vw;
+      padding: 1vw;
+      margin-left: 2vw;
+      font-family: 'Open Snans', sans-serif;
+     }
+
+
+     .comm31 span{
+      padding-top: 5vw;
+      margin-left: 3vw;
+      font-size: 5vw;
+      color: rgb(235, 123, 100);
+     }
+
+     .comm31 p{
+      font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+     }
+
+     .comm31 div{
+      font-size: 4vw;
+      text-transform: capitalize;
+      font-weight:bolder ;
+      font-family: 'Teko', sans-serif;
+     }
+
+
+
+      .comm32{
+      width: 40vw;
+      height: 30vw;
+      height: auto;
+      box-shadow: 4px 4px 4px px white;
+      border: 1px solid rgb(230, 230, 230);
+      border-radius: 1vw;
+      padding: 1vw;
+      margin-right: 2vw;
+     }
+
+
+     .comm32 span{
+      padding-top: 5vw;
+      margin-left: 3vw;
+      font-size: 5vw;
+      color: rgb(235, 123, 100);
+     }
+
+     .comm32 p{
+      font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+     }
+
+     .comm32 div{
+      font-size: 4vw;
+      text-transform: capitalize;
+      font-weight:bolder ;
+      font-family: 'Teko', sans-serif;
+     }
+        /*---------commentsends---*/
+      /*---------video-----*/
+      .video{
+        width: 100vw;
+        height: 50vw;
+        background-image: url(images/a23.avif);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        margin-top: 7vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .video button{
+        all: unset;
+        background-color: rgb(235, 123, 100);
+        border-radius: 3vw;
+      }
+
+      .video button img{
+        width: 5vw;
+      }
+
+     .video p{
+      color: white;
+      font-size: 2vw;
+      width: 50vw;
+      font-family: 'Open Snans', sans-serif;
+
+     }
+
+     .video div{
+      font-size: 3vw;
+      color: white;
+      text-transform: capitalize;
+      font-weight: bolder;
+      font-family: 'Teko', sans-serif;
+     }
+
+     .video button img{
+      width: 6vw;
+      border-radius: 3vw;
+     }
+      /*---------videoends-----*/
+       /*------blog-----*/
+
+        .log1 img{
+          width: 3vw;
+        }
+        .log2 img{
+          width: 3vw;
+        }
+
+       .log1{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1vw;
+          
+       }
+       .log2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+       }
+
+
+          .blog1{
+          font-size: 3vw;
+          margin-left: 1vw;
+          text-transform: capitalize;
+          display: flex;
+          flex-direction: column;
+          gap: 1vw;
+          font-family: 'Teko', sans-serif;
+
+        }
+          .blog{
+            margin-top: 5vw;
+          }
+
+          .blog1 div{
+      margin-left: 1vw;
+      background-color:rgb(235, 123, 100);
+      width: 5vw;
+      height: 0.5vw;
+      border-radius: 0.5vw;
+    }
+  
+     .blog2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+
+    }
+
+    .blog2 p{
+      margin-left: 1vw;
+      font-size: 2vw;
+      width: 60vw;
+      font-family: 'Open Snans', sans-serif;
+    }
+       .blog2 button{
+        all: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw;
+        border: 1px solid rgb(235, 123, 100);
+        margin-right: 3vw;
+        font-size: 2vw;
+        gap: 1vw;
+       }
+
+
+       .blog2 button img{
+        width: 3vw;
+       }
+
+        .blog3{
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        .blog3a{
+          width: 90vw;
+          height: 70vw;
+          background-image: url(images/hgfff.jpg);
+          border-radius: 3vw;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+     .blog3a button{
+      all: unset;
+      background-color: rgb(235, 123, 100);
+      padding: 1vw;
+      font-size: 3vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      margin-left: 70vw;
+      margin-top: 5vw;
+      font-family: 'Open Snans', sans-serif;
+     }
+
+     .bblog3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 3vw;
+      width: 90vw;
+      gap: 1vw;
+      height: 50vw;
+      border-left:  1px solid rgb(230, 230, 230);
+      border-right:  1px solid rgb(230, 230, 230);
+      border-bottom:  1px solid rgb(230, 230, 230);
+     }
+
+      .bblog31{
+        display: flex;
+        gap: 3vw;
+        margin-left: 1vw;
+        font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+
+      }
+
+      .log0{
+        font-size: 2.5vw;
+        font-weight: bolder;
+        margin-left: 1vw;
+        padding-bottom: 1vw;
+        font-family: 'Teko', sans-serif;
+      }
+       /*------blog-----*/
+       /*-------othercomment----*/ 
+       /*-------othercomment----*/ 
+        .othercomment{
+          margin-top: 5vw;
+          width: 100vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 3vw;
+        }
+
+
+
+        .oc10{
+        font-size: 2.2vw;
+        font-weight: bolder;
+        margin-left: 1vw;
+        padding-bottom: 1vw;
+        text-transform: capitalize;
+        margin-top: 2vw;
+        font-family: 'Teko', sans-serif;
+        
+      }
+
+      .oc0{
+        width: 15vw;
+        height: 10vw;
+        border-radius: 1vw 0 0 1vw;
+      }
+
+       .oc1{
+        width: 90vw;
+        gap: 2vw;
+        border:  1px solid rgb(230, 230, 230);
+        border-radius: 1vw;
+        display: flex;
+        
+       }
+       .oc11 img{
+         width: 3vw;
+       }
+       .oc12 img{
+         width: 3vw;
+       }
+
+       .oc11{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+       }
+       .oc12{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+       }
+
+         .oco{
+          display: flex;
+          gap: 2vw;
+          font-size: 2vw;
+          margin-top: 1vw;
+      font-family: 'Open Snans', sans-serif;
+         }
+
+
+
+       /*-------othercommentends----*/ 
+
+      /*----allimage---*/
+       .allimage{
+        width: 100vw;
+        background-size: cover;
+        background-image: url(images/WhatsApp\ Image\ 2025-08-17\ at\ 07.11.11_43c94d69.jpg);
+        height: 17vw;
+        margin-top: 5vw;
+       }
+      /*----allimageends---*/
+      /*--------footer---*/
+        .f00t{
+          display: flex;
+          flex-direction: column;
+          background-color: rgba(0, 0, 0, 0.6);
+          width: 100vw;
+           justify-content: center;
+        align-items: center;
+        }
+        .f0t{
+          width: 80vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 5vw;
+        }
+         .f0t1{
+          display: flex;
+
+         }
+         .f0t1a span{
+            color: rgb(235, 123, 100);
+         }
+         .f0t1a div{
+          font-size: 4vw;
+          color: white;
+          text-transform: capitalize;
+          font-family:Poppins;
+
+         }
+         .f0t1a p{
+          font-size: 3vw;
+          color: white;
+         }
+
+         .f0t1b1{
+          all: unset;
+          background-color: white;
+          padding: 1vw;
+          font-size: 2vw;
+          width: 20vw;
+          color:grey;
+         }
+           .f0t1b2{
+            all: unset;
+            background-color: white;
+            padding: 1vw;
+            width: 8vw;
+            text-align: center;
+            font-size: 2vw;
+      font-family: 'Open Snans', sans-serif;
+           }
+        
+      footer{
+        margin-top: 5vw;
+        width: 100vw;
+        background-image: url(images/a14.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+         .yes1 div{
+          font-size: 3vw;
+          text-transform: capitalize;
+          font-weight: bolder;
+          color: white;
+          font-family: 'Teko', sans-serif;
+
+         }
+         .yes1 p{
+          font-size: 2vw;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1vw;
+      font-family: 'Open Snans', sans-serif;
+         }
+         .yes1 p img{
+          width: 3vw;
+          
+         }
+         .yes{
+          display: flex;
+          width: 80vw;
+          justify-content: space-between;
+         }
+         .yes2{
+          margin-left: 15vw;
+          display: flex;
+          flex-direction: column;
+          gap: 1vw;
+         }
+
+         .yes2 div{
+          font-size: 3vw;
+          text-transform: capitalize;
+          font-weight: bolder;
+          color: white;
+          font-family: 'Teko', sans-serif;
+         }  
+          .yes1{
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+          }
+
+
+         .yes2 p{
+          font-size: 2vw;
+          color: white;
+      font-family: 'Open Snans', sans-serif;
+         }
+         .yes2 p img{
+          width: 2vw;
+          
+         }
+
+         .gt1 img{
+          width: 15vw;
+         }
+         .gt2 img{
+          width: 15vw;
+         }
+
+         .gt2{
+          display: flex;
+          gap: 2vw;
+         }
+          .gt1{
+          display: flex;
+          gap: 2vw;
+         }
+      /*--------footerend---*/
+      /*------links----*/ 
+      /* hidden by default */
+.from-left, .from-right {
+  opacity: 0;
+  transform: translateX(0); 
+  transition: all 0.8s ease-out;
+}
+
+.from-left.show {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.from-right.show {
+  opacity: 1;
+  transform: translateX(0);
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to   { transform: translateX(0); opacity: 1; }
+}
+         .dec{
+          display: none;
+         }
+
+
+          .links{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(240, 240, 240);
+          }
+            .ks0{
+              display: flex;
+              flex-direction: column;
+              gap: 1vw;
+              background-color: rgb(240, 240, 240);
+            }
+
+          .ks1{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+          }
+          .ks1a{
+            margin-left: 2vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: 'Teko', sans-serif;
+          }
+          .ks1b{
+            margin-right: 4vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+          }
+          .ks1c{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .ks1d{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .jok{
+            display: none;
+          }
+          .zok{
+            color: rgb(235, 123, 100);
+          }
+          .egg{
+            display: none;
+            height: 1vw;
+            width: 2vw;
+            background-color: black;
+          }
+          .kj{
+             height: 1vw;
+            width: 3vw;
+            border-radius: 0.5vw;
+            background-color: rgb(235, 123, 100);
+            margin-top: 1vw;
+          }
+
+          .kt01{
+              display: flex;
+              flex-direction: column;
+              gap: 1vw;
+              background-color: rgb(240, 240, 240);
+            }
+
+          .kt1{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+          }
+          .kt1a{
+            margin-left: 2vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt1b{
+            margin-right: 4vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt1c{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+
+          .kt1d{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .jok1{
+            display: none;
+          }
+          .zok1{
+            color: black;
+          }
+          .egg1{
+            display: none;
+            height: 1vw;
+            width: 2vw;
+            background-color: black;
+          }
+          .kj1{
+             height: 1vw;
+            width: 3vw;
+            border-radius: 0.5vw;
+            background-color:black; 
+            margin-top: 1vw;
+          }
+          
+              .kt02{
+              display: flex;
+              flex-direction: column;
+              gap: 1vw;
+              background-color: rgb(240, 240, 240);
+            }
+
+          .kt2{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+          }
+          .kt2a{
+            margin-left: 2vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt2b{
+            margin-right: 4vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt2c{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt2d{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .jok2{
+            display: none;
+          }
+          .zok2{
+            color: black;
+          }
+          .egg2{
+            display: none;
+            height: 1vw;
+            width: 2vw;
+            background-color: black;
+          }
+          .kj2{
+             height: 1vw;
+            width: 3vw;
+            border-radius: 0.5vw;
+            background-color:black; 
+            margin-top: 1vw;
+          }
+
+          .kt03{
+              display: flex;
+              flex-direction: column;
+              gap: 1vw;
+              background-color: rgb(240, 240, 240);
+            }
+
+          .kt3{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+          }
+          .kt3a{
+            margin-left: 2vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt3b{
+            margin-right: 4vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt3c{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt3d{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .jok3{
+            display: none;
+          }
+          .zok3{
+            color: black;
+          }
+          .egg3{
+            display: none;
+            height: 1vw;
+            width: 2vw;
+            background-color: black;
+          }
+          .kj3{
+             height: 1vw;
+            width: 3vw;
+            border-radius: 0.5vw;
+            background-color:black; 
+            margin-top: 1vw;
+          }
+
+
+          .kt04{
+              display: flex;
+              flex-direction: column;
+              gap: 1vw;
+              background-color: rgb(240, 240, 240);
+            }
+
+          .kt4{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+          }
+          .kt4a{
+            margin-left: 2vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt4b{
+            margin-right: 4vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt4c{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt4d{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .jok4{
+            display: none;
+          }
+          .zok4{
+            color: black;
+          }
+          .egg4{
+            display: none;
+            height: 1vw;
+            width: 2vw;
+            background-color: black;
+          }
+          .kj4{
+             height: 1vw;
+            width: 3vw;
+            border-radius: 0.5vw;
+            background-color:black; 
+            margin-top: 1vw;
+          }
+          
+          .kt05{
+              display: flex;
+              flex-direction: column;
+              gap: 1vw;
+              background-color: rgb(240, 240, 240);
+            }
+
+          .kt5{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+          }
+          .kt5a{
+            margin-left: 2vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt5b{
+            margin-right: 4vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+      
+          }
+          .kt5c{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt5d{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .jok5{
+            display: none;
+          }
+          .zok5{
+            color: black;
+          }
+          .egg5{
+            display: none;
+          }
+          .kj5{
+             height: 1vw;
+            width: 3vw;
+            border-radius: 0.5vw;
+            background-color:black; 
+            margin-top: 1vw;
+          }
+
+          .kt06{
+              display: flex;
+              flex-direction: column;
+              gap:1vw;
+              background-color: rgb(240, 240, 240);
+            }
+
+          .kt6{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+          }
+          .kt6a{
+            margin-left: 2vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt6b{
+            margin-right: 4vw;
+            font-size: 3vw;
+            font-weight: bolder;
+            cursor: pointer;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt6c{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .kt6d{
+            font-size: 3vw;
+            font-weight: bolder;
+            margin-left: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            font-family: 'Teko', sans-serif;
+          }
+          .jok6{
+            display: none;
+          }
+          .zok6{
+            color: black;
+          }
+          .egg6{
+            display: none;
+            height: 1vw;
+            width: 2vw;
+            background-color: black;
+          }
+          .kj6{
+             height: 1vw;
+            width: 3vw;
+            border-radius: 0.5vw;
+            background-color:black; 
+            margin-top: 1vw;
+          }
+
+         .ks1:hover{
+            background-color:aliceblue;
+          }
+          .kt1:hover{
+            background-color:aliceblue;
+          }       
+           .kt2:hover{
+            background-color:aliceblue;
+          }       .kt3:hover{
+            background-color:aliceblue;
+          }       
+          .kt4:hover{
+            background-color:aliceblue;
+          }       
+          .kt5:hover{
+            background-color:aliceblue;
+          }       
+          .kt6:hover{
+            background-color:aliceblue;
+          }  
+          .oju{
+            display: none;
+          }     
+            
+          .goku{
+            animation: slidedown 1s ease-out forwards;
+          }
+            @keyframes slidedown{
+              from {
+                transform: translatey(-150%);
+                opacity: 0;
+              } 
+
+              to {
+                transform: translatey(0);
+                opacity: 1;
+              }
+
+
+            }
+            .biggest, .biggest1{
+              display: none;
+            }
+
+            footer hr{
+              width: 80vw;
+               color: grey;
+               background-color: grey;
+            }
+            .ik{
+                display: none;
+            }
+
+            .fd{
+              width: 80vw;
+              height: 1px;
+              background-color: rgba(250, 250, 250, 0.6);
+            }
+            
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease; 
+}
+
+.loader {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.loader img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  animation: fadeCycle 8s infinite;
+}
+
+.loader img:nth-child(1) { animation-delay: 0ss; }
+.loader img:nth-child(2) { animation-delay: 2s; }
+.loader img:nth-child(3) { animation-delay: 4s; }
+.loader img:nth-child(4) { animation-delay: 6s; }
+
+@keyframes fadeCycle {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  25% { opacity: 1; }
+  35% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Hidden content initially */
+#content {
+  display: none;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.eex{
+display: flex;
+flex-direction: column;
+gap: 2vw;}
+
+
+.omo:hover{
+                  border-left: 1px solid white;
+                 }
+
+              
+           
+            
+
+      /*------links----*/ 
+          
+        @media (max-width:3066px) and (min-width:2404px) {
+
+
+            .omo:hover{
+                  border-left: 1px solid white;
+                 }
+
+
+             header{
+              height: 5vw;
+              transition: background-color 0.3s ease;
+              position: fixed;
+              top:2.5vw;
+              background: transparent;
+              z-index: 9999;
+              
+             }
+
+             #header.scrolled{
+
+             background-color: rgba(0, 0, 0, 1);
+             }
+
+             body{
+              display: flex;
+              flex-direction: column;
+              gap: 5vw;
+              justify-content: center;
+              align-items: center;
+             }
+
+             .biggest{
+              display: block;
+              display: flex;
+              height: 5vw;
+              justify-content: center;
+              gap: 2vw;
+              margin-left: 8vw;
+              
+             }
+
+
+              .yt{
+                text-transform: uppercase;
+                font-size: 1.5vw;
+                display: block;
+                margin-top: 1.5vw;
+                font-weight: bolder;
+              }
+              .yto{
+                color:rgb(235, 123, 100);
+              }
+                
+                        .yta1{
+                          color: rgb(235, 123, 100);
+                          text-decoration: underline;
+                        }
+
+                        .yta2:hover{
+                          color: rgb(235, 123, 100);
+                          text-decoration: underline;
+                        }
+
+                          .yta1, .yta2{
+                            font-size: 1vw;
+                          padding-top: 1vw;
+                          margin-left: 0.3vw;}
+
+
+
+                        .yta2{
+                           color: white;
+                          text-decoration: underline;
+                    text-decoration-color: transparent;
+                    text-underline-offset: 4px;
+                    transition: color 0.3s ease;
+                    text-decoration-color: 0.4s ease;
+                    padding-bottom: 1vw;
+                        }
+
+                          .tooltip{
+                            margin-top: 2vw;
+                            height:auto;
+                            width: 15vw;
+                             display: flex;
+                             background-color: rgba(0, 0, 0, 0.6);
+                             flex-direction: column;
+                             gap: 2vw;
+                             display: none;
+                          }
+
+                        .yt:hover .tooltip{
+                          display: block;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 1vw;
+
+                        }
+                         
+                        
+
+                        .yt1{
+                text-transform: uppercase;
+                font-size: 1.5vw;
+                display: block;
+                margin-top: 1.5vw;
+                font-weight: bolder;
+              }
+              .yto1{
+                color:white;
+              }
+                        .ytb1:hover{
+                          color: rgb(235, 123, 100);
+                          text-decoration-color: rgb(235, 123, 100);   
+                        }
+
+                        .ytb1{
+                          color: white;
+                          text-decoration: underline;
+                    text-decoration-color: transparent;
+                    text-underline-offset: 4px;
+                    transition: color 0.3s ease;
+                    text-decoration-color: 0.4s ease;
+                        }
+                       
+
+                        .ytb1, .ytb2{
+                          font-size: 1vw;
+                          padding-top: 1vw;
+                          margin-left: 0.5vw;
+                          padding-bottom: 1vw;
+                        }
+
+                          .tooltip1{
+                            
+                            padding-right: 1vw;
+                            margin-top: 2vw;
+                            height:auto;
+                            width: 15vw;
+                             display: flex;
+                             background-color: rgba(0, 0, 0, 0.6);
+                            flex-direction: column;
+                    gap: 2vw;
+                    display: none;
+                      
+                          }
+
+                        .yt1:hover .tooltip1{
+                        display: block;
+                          display: flex;
+                          flex-direction: column;
+                          gap: 1vw;
+                        }
+                            .biggest1 img{
+                              width: 2vw;
+                              margin-top: 1vw;
+                            }
+
+                            .biggest1{
+                              display: block;
+                              height: 5vw;
+                              display: flex;
+                              justify-content: center;
+                              gap: 2vw;
+                              margin-left: 5vw;
+                            }
+
+                            .biggest1aa{
+                              width: 20vw;
+                              height: 10vw;
+                              background-color: white;
+                              color: black;
+                              text-transform: capitalize;
+                              margin-top: 2vw;
+                              font-size: 2vw;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              font-weight: bolder;
+                              display: none;
+
+                            }
+                                     .biggest1a:hover .biggest1aa{
+                                      display: block;
+                                      width: 20vw;
+                              height: 10vw;
+                              background-color: white;
+                              color: black;
+                              text-transform: capitalize;
+                              margin-top: 2vw;
+                              font-size: 2vw;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              font-weight: bolder;
+                                     }
+
+
+
+                                     #muj{
+                                      display: none;
+                                     }
+
+
+                                   .fr{
+                                    display: flex;
+                                    width: 90vw;
+                                   }
+
+                                   .t2{
+                                    width: 40vw;
+                                   }
+                                       .s1 img{
+                                        width: 25vw;
+                                
+                                  }
+   
+                                   .info{
+                                    all: unset;
+                                    display: flex;
+                                     background-color:azure;
+                                     width: 100vw;
+                                    height:auto;
+                                     display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding-top: 2vw;
+                                    padding-bottom: 3vw;
+                                    background-size: cover;
+
+                                   }
+
+                                   .ainfo{
+                                     width: 50vw;
+                                    height:auto;
+                                    margin-left: 2vw;
+                                  
+                                
+                                   }
+                                     .ainfo img{
+                                      width: 60vw;
+                                      height: 70vw;
+
+                                     }
+
+                                    .i1a{
+                                      width: 50vw;
+                                      margin-top: 2vw;
+                                    }
+   
+                                   .lmao{
+                                    position: relative;
+                                    z-index: 5;
+                                    width: 60vw;
+                                    gap: 3vw;
+                                    right: 7vw;
+                                   }
+                                     .dk p{
+                                      width: 49vw;
+                                     }
+   
+                                       .omo1{
+                                        font-size: 3vw;
+
+                                       }
+                                       .omo p{
+                                        font-size: 1.5vw;
+                                       }
+   
+   
+                                        .var{
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          width: 100vw;
+                                          gap: 5vw;
+                                          
+                                        }
+
+                                        .prices{
+                                          margin-top: 0;
+                                        }
+                                           .p1a{
+                                            width: 40vw;
+                                           }
+
+                                           .p2, .p3{
+                                            width: 40vw;
+                                            height: 60vw;
+                                           }
+                                              .s1a{
+                                                width: 40vw;
+                                              }
+                                              .s2{
+                                                width: 40vw;
+                                                height: 60vw;
+                                              }
+                                              .p4{
+                                                width: 35vw;
+                                              }
+
+                                                  .fang{
+                                                    height: 0;
+                                                  }
+
+                                                 .s3{
+                                                  display: flex;
+                                                  justify-content: center;
+                                                  align-items: center;
+                                                 }
+
+                                              .s41{
+                                                width: 35vw;
+                                                justify-content: space-between;
+                                              }
+                                              .p41{
+                                                width: 35vw;
+                                              }
+
+                                              .p41a{
+                                                width: 35vw;
+                                              }
+
+
+                                              .s4{
+                                                width: 35vw;
+                                                font-size: 2vw;
+                                                
+                                              }
+                                                .s41 hr{
+                                                  width: 35vw;
+                                                }
+                                                .rfo{
+                                                  display: flex;font-size: 1vw;color: white;font-family: Open Sans,sans-serif ;font-weight: lighter;gap: 2vw;
+                                                }
+
+                                                  .s4af{
+                                                    font-size: 2vw;
+                                                  }
+                                                  .s4af img{
+                                                    width: 2vw;
+                                                  }
+                                                 .s41bb button{
+                                                  font-size: 1vw;
+                                                  padding: 0.5vw;
+                                                 }
+                                                     .s41bbc button{
+                                                       font-size: 1vw;
+                                                  padding: 0.5vw;
+                                                     }
+
+                                                     .s41a{
+                                                      
+                                                      font-size: 1.5vw;
+                                                     }
+
+                                                     .s41ab{
+                                                      font-size: 1vw;
+                                                      justify-content:space-between;
+                                                     }
+
+                                                     .s41b{
+                                                      font-size: 1.5vw;
+                                                     }
+
+                                                     .s3{
+                                                      width: 40vw;
+                                                      height: 60vw;
+                                                      display: flex;
+                                                      flex-direction: column;
+                                                      justify-content: center;
+                                                     }
+
+                                                     
+                                                     .schedule{
+                                                      margin-top: 0;
+                                                      padding-top: 0;
+                                                     }
+
+                                                     
+
+                                                
+
+                                                  .u1{
+                                                    margin-left: 5vw;
+                                                  }
+                                                  .u2{
+                                                    margin-left: 5vw;
+                                                  }
+                                                    .unknown p{
+                                                      margin-left: 5vw;
+                                                    }
+                                                    
+                                                    .u3{
+                                                      margin-left: 5vw;
+                                                    }
+
+                                                   .h2{
+                                                    width: 25vw;
+                                                    height: 30vw;
+                                                   }
+                                                     .h1a{
+                                                      font-size: 2vw;
+                                                      margin-top: 15vw;
+                                                     }
+
+                                               .h2a{
+                                                margin-top: 15vw;
+                                                font-size: 2vw;
+                                               }     
+
+                                                .h2 p{
+                                                  font-size: 1.5vw;
+                                                }
+
+                                                .rf{
+                                                  display: flex;
+                                                  gap: 1vw;
+                                                }
+
+                                                .rf img{
+                                                  width: 2vw;
+                                                }
+
+                                                    .h1{
+                                                      width: 25vw;
+                                                      height: 30vw;
+                                                    }
+                                                    .h2a{
+                                                      font-size: 2vw;
+                                                    }
+
+                                                    .h1 p{
+                                                      font-size: 1.5vw;
+
+                                                    }
+
+                                                .frag{
+                                                  display: flex;
+                                                  width: 80vw;
+                                                }
+                                                   .work{
+                                                    margin-top:10vw;
+                                                   }
+
+                                                   .works{
+                                                    display: flex;
+                                                   }
+
+                                                   
+                 .wok1, .wok2, .wok3, .wok4{
+                  width: 20vw;
+                  height: 20vw;
+                 }
+
+                 .wok{
+                  all: unset;
+                  display: flex;
+                  gap: 3vw;
+                 }
+                                        
+                 
+                 .wok1aa, .wok2aa, .wok3aa, .wok4aa{
+                  margin-top:7vw;
+                  font-size: 2vw;
+                 }
+                 .wok1 p, .wok2 p, .wok3 p, .wok4 p{
+                  font-size: 1vw;
+                 }
+                                    .meme2{
+                                      width: 40vw;
+                                    }
+
+                                    .fragment{
+                                      width: 100vw;
+                                      display: flex;
+                                      justify-content: center;
+                                      align-items: center;
+                                      background-size: cover;
+                                      background-repeat: no-repeat;
+                                      background-image: url(images/hyh.jpg);
+                                    }
+                                    .te1, .te2, .te3, .te4{
+                                      width: 20vw;
+                                      height: 20vw;
+                                    }
+
+                                    .te1a, .te2a, .te3a, .te4a{
+                                      width: 20vw;
+                                      height: 20vw;
+                                    }
+
+                                    .meme{
+                                      display: flex;
+                                      flex-direction: column-reverse;
+                                    }
+
+                                    .meme button{
+                                      display: none;
+                                      margin-bottom: 2vw;
+                                    }
+
+                                    .team button{
+                                      display: block;
+                                      display: flex;
+                                      justify-content: center;
+                                    }
+                                     .ogov{
+                                         display: flex;
+                                         width: 90vw;
+                                         justify-content: center;
+                                     }
+
+                                     
+                                    
+                                     
+
+                                     .bblog3{
+                                      width: 45vw;
+                                      height: auto;
+                                      border-radius: 1vw;
+                                     }
+                                     .blog3{
+                                      width: 45vw;
+                                      height: auto;
+                                      border-radius: 1vw;
+                                     }
+
+                                     .blog3a{
+                                      width: 45vw;
+                                      height: 30vw;
+                                      border-radius: 1vw;
+                                     }
+
+                                     .blog3a button{
+                                      
+                                      margin-left: 36vw;
+                                      font-size: 1vw;
+                                     }
+                                        .log0{
+                                          font-size: 1.2vw;
+                                        }
+                                        .oc1{
+                                          width: 40vw;
+                                        }
+                                        .oc10{
+                                          font-size: 1.2vw;
+                                        }
+                                        .oc11 img, .oc12 img{
+                                          width: 2vw;
+                                          
+                                        }
+                                        .oc11, .oc12{
+                                          font-size: 1vw;
+                                        }
+                                        .f0t1{
+                                          width: 95vw;
+                                          display: flex;
+                                          justify-content: space-between;
+                                          align-items: center;
+                                          font-size: 1.5vw;
+                                        }
+                                        .f0t1a{
+                                           display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          font-size: 1.5vw;
+                                          gap: 7vw;
+                                        }
+
+                                        .f0t1a div{
+                                          font-size: 4vw;
+                                        }
+
+                                        .f0t1a p{
+                                          font-size: 3vw;
+                                        }
+                                        .f0t{
+                                          width: 95vw;
+                                        }
+                                             .yes{
+                                              width: 95vw;
+                                             }
+                                             .yes1{
+                                              all: unset;
+                                              display: flex;
+                                              gap: 2vw;
+                                              width: 47vw;
+                                             }
+
+                                             .yes1 div{
+                                              font-size: 2vw;
+                                              font-weight: lighter;
+                                             }
+
+                                             .yes1 p{
+                                              font-size: 1vw;
+                                             }
+
+                                              .yes2{
+                                              all: unset;
+                                              display: flex;
+                                              gap: 2vw;
+                                              width: 47vw;
+                                             }
+
+                                             .yes2 div{
+                                              font-size: 2vw;
+                                              font-weight: lighter;
+                                              font-family: 'Teko', sans-serif;
+                                             }
+
+                                             .yes2 p{
+                                              font-size: 1vw;
+                                             }
+
+                                             .gt1 img, .gt2 img{
+                                              width: 10vw;
+                                             }
+
+
+                                             .fd{
+                                              width: 95vw;
+                                             }
+
+                                             footer p{
+                                              font-size: 1vw;
+                                          
+      font-family: 'Open Snans', sans-serif;
+                                             }
+                                     
+                                             .a1{
+                                              color: white;
+                                             }
+
+                                             .yt, .yt1{
+                                              font-family: 'Teko', sans-serif;
+                                             }
+
+                                             .fr1{
+                                              color: rgb(235, 123, 100);
+                                              font-size: 1.5vw;
+                                              font-weight: lighter;
+                                              font-family: 'Open Snans', sans-serif;
+                                              margin-left: vw;
+                                              border-left: 1px solid rgba(250, 250, 250, 0.6);
+                                              height: 3vw;
+                                              padding-left: 1vw;
+                                              display: flex;
+                                              justify-content: center;
+                                              align-items: center;
+                                             }
+                     .ik{
+                     display: block;
+                     position:fixed;
+                     background-color: transparent;
+                     top: 0;
+                     width: 100vw;
+                     
+                    }
+                    
+                    .rfo{
+                      margin-left: 1vw;
+                    }
+                    
+                   .ik1{
+                   display: flex;
+                  
+                     align-items: center;
+                }
+
+                .ed{
+                  width: 15vw;
+                }
+                .ik1{
+                     display: flex;
+                     justify-content: space-between;
+                }
+
+                  .dx9{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1vw;
+                    margin-right: 3vw;
+                  }
+
+                
+                }
+             @media screen and (max-width:768px) {
+
+                html, body{
+                  width: 100vw;
+                  margin: 0;
+                  padding: 0;
+                  overflow-x: hidden;
+                
+                }
+                .a2, .a3{
+                  font-size: 7vw;
+                }
+                .a4{
+                  font-size: 4vw;
+                }
+                .t1{
+                  font-size: 6vw;
+                }
+                .t2 p{
+                  font-size: 4vw;
+                  width: 80vw;
+                }
+                .t3{
+                  font-size: 4vw;
+                  width: 85vw;
+                }
+              
+   
+    
+   
+
+              .s1{
+          
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              }
+
+              .s1 img{
+                width: 90vw;
+              }
+              .info{
+                background-image: none;
+              }
+
+              .i1a{
+                height: 50vw;
+                width: 90vw;
+                justify-content: center;
+                align-items: center;
+                background-color:rgb(249, 249, 249);
+                margin-bottom: 5vw;
+              }
+              .info{
+                height: auto;
+              }
+              
+               
+              
+                 .sx{
+                  height: 50vw;
+                  width: 30vw;
+                  border-radius: 2vw 0 0 2vw;
+                  background-color: rgb(235, 123, 100);
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                 }
+
+                 .omo:hover{
+                  border-left: 1px solid white;
+                 }
+
+                 .omo{
+                  width: 60vw;
+                  text-align: center;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                 }
+
+                 .omo p{
+                        font-size: 4vw;
+                        text-align:left;
+                        width: 40vw;
+                 }
+
+                 .omo1{
+                  font-size: 5vw;
+                  text-align: left;
+                  width: 40vw;
+
+                 }
+
+                 .f1{
+                  font-size: 5vw;
+                 }
+
+                 .dk p{
+                  font-size: 4vw;
+                 }
+
+                 .eex{
+                  width: 95vw;
+                  display: flex;
+                  background-size: contain;
+                  background-repeat: no-repeat;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  background-image: url(images/rrfvr5drv5vr.jpg);
+                  gap: 3vw;
+                 }
+
+                 .p41a{
+                 font-size: 4vw;}
+
+
+                .p41c{
+                  font-size: 3vw;}
+
+
+                  .p2, .p3{
+                  height: auto;}
+
+
+                  .p1{font-size: 5vw;
+                  }
+              
+                .s0{
+                font-size: 5vw;
+                }
+
+             
+             .s41a{
+               font-size: 5vw;
+             }
+             .s41{
+              font-size: 4vw;
+             }
+             .s2, .s3{
+              height: auto;
+             }
+             
+             .s4af{
+             font-size: 4vw;}
+             
+              .s41bb{
+              font-size: 3vw;
+              }
+                  .s41cb{
+                  font-size: 3vw;}
+      .u1{
+      font-size: 7vw;
+    margin-left: 10vw;}
+             .u2{
+             font-size: 5vw;
+            margin-left: 10vw;}
+
+                .unknown p{
+                font-size: 4vw;
+              margin-left: 10vw;}
+         
+                  .unknown{
+                    height: 50vw;
+                  }
+
+
+                .u3{
+                font-size: 4vw;
+              margin-left: 10vw;}
+
+            .haircut{
+            display: flex;
+            flex-direction: column;}
+
+                  
+
+       .h1, .h2{
+        width: 90vw;
+       }
+       .h1a, .h2a{
+        font-size: 5vw;
+       }
+       .h1 p, .h2 p{
+            font-size: 4vw;
+       }
+           #ddz{
+            font-size: 4vw;
+           }
+
+           .h1a, .h2a{
+            margin-top: 32vw;
+           }
+
+           #ddz img{
+            width: 3vw;
+           }
+              .wok1 p, .wok2 p, .wok3 p, .wok4 p{
+                font-size: 3vw;
+              }
+
+               .work1{
+                font-size: 5vw;
+               }
+               .work2{
+                font-size: 3vw;
+               }
+               .work3{
+                font-size: 3vw;
+               }
+               .work3 img{
+                width: 3vw;
+               }
+
+               .works{
+                display: flex;
+                flex-direction: column;
+               }
+
+           .wok{
+            display: flex;
+            flex-direction: column;
+           }
+
+                .wok1, .wok2, .wok3, .wok4{
+                  background-size: cover;
+                }
+
+
+           .wok1, .wok1a, .wok2, .wok2a, .wok3, .wok3a, .wok4, .wok4a{
+            width: 90vw;
+           }
+           .wok1aa, .wok2aa, .wok3aa, .wok4aa{
+            font-size: 5vw;
+            margin-top: 30vw;
+           }
+           .wok1 p .wok2 p, .wok3 p, .wok4 p{
+            font-size: 3vw;
+           }
+           .wok1 button, .wok2 button, .wok3 button, .wok4 button{
+            font-size: 3vw;
+           }
+
+           .wok1 button img, .wok2 button img, .wok3 button img, .wok4 button img{ 
+            width: 3vw;
+           }
+
+           .m1{
+            font-size: 5vw;
+           }
+           .m2{
+            font-size: 3vw;
+           }
+           .meat{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+
+           .te1, .te1a, .te2, .te2a, .te3, .te3a, .te4, .te4a{
+            width: 90vw;
+            height: 60vw;
+           }
+
+           .te1b, .te2b, .te3b, .te4b{
+            font-size: 5vw;
+           }
+           .te1c, .te2c, .te3c, .te4c{
+            font-size: 3vw;
+           }
+           .comm32{
+            display: none;
+           }
+           .comm31{
+            width: 80vw;
+           }
+           .comm31 p{
+            font-size: 4vw;
+           }
+           .comm31 span{
+            font-size: 7vw;
+           }
+           .comm31 div{
+            font-size: 7vw;
+           }
+           .comm2{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-left: 2vw;
+            font-size: 4vw;
+           }
+           .comm2 p, .comm2 button{
+            font-size: 4vw;
+           }
+           .comm1{
+            font-size: 5vw;
+           }
+           .comm2 p{
+            width: 80vw;
+           }
+           .video p{
+            font-size: 4vw;
+            width: 80vw;
+           }
+           .video button img{
+            width: 10vw;
+           }
+            .video button{
+              border-radius: 5vw;
+            }
+
+           .video div{
+            font-size: 5vw;
+           }
+           .blog1{
+            font-size: 5vw;
+           }
+           .blog2{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-left: 2vw;
+           }
+           .blog2 p{
+            font-size: 4vw;
+            width: 80vw;
+           }
+           .blog2 button{
+            font-size: 3vw;
+            padding: 2vw;
+           }
+           .log1, .log2{
+            font-size: 5vw;
+            
+           }
+           .log1 img, .log2 img{
+            width: 5vw;
+           }
+           .log0{
+            font-size: 6vw;
+            text-align: center;
+           }
+           .bblog3{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           }
+           .oc1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           }
+           .oc0{
+            width: 90vw;
+            height: inherit;
+           }
+           .oc11, .oc12{
+            font-size: 5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           }
+           .oc11 img, .oc12 img{
+            width: 5vw;
+           }
+           .oc10{
+            font-size: 5vw;
+            text-align: center;
+           }
+           .f0t1{
+            display:flex ;
+            flex-direction: column;
+            align-items: start;
+            text-align: left;
+           }
+           .f0t{
+            align-items: start;
+            margin-right: 17vw;
+           }
+           .f0t1a div{
+            font-size: 7vw;
+           }
+           .f0t1a p{
+            font-size: 5vw;
+           }
+           .f0t1b1, .f0t1b2{
+            font-size: 5vw;
+            width: auto;
+            padding-left:3vw;
+            padding-right: 3vw;
+            margin-right: 5vw;
+           }
+           .f0t1b{
+            padding-bottom: 2vw;
+           }
+           .yes{
+            display: flex;
+            flex-direction: column;
+           }
+           .yes2{
+            margin-left: 0;
+           }
+           .yes1 p, .yes2 p{
+            font-size: 3vw;
+           }
+           .yes1 div, .yes2 div{
+            font-size: 5vw;
+           }
+           .meme button{
+            font-size: 4vw;
+            width: 29vw;
+           }
+           .a4{
+            width: 80vw;
+           }
+           .a1{
+            font-size: 5vw;
+           }
+
+           #muj{
+            font-size: 4vw;
+           }
+           .home{
+            height: 75vw;
+           }
+           .fang{
+            height: 5vw;
+           }
+           
+
+
+             
+             
+}
+</style>
+</head>
+<div id="loader">
+    <div class="loader">
+      <img src="images/icons8-scissors-100.png" alt="Loading 1">
+      <img src="images/icons8-barbershop-50.png" alt="Loading 2">
+      <img src="images/icons8-businessman-50.png" alt="Loading 3">
+      <img src="images/icons8-makeup-brush-50.png" alt="Loading 4">
+    </div>
+  </div>
+
+ <body>
+  <section id="fixedBox" class="ik">
+      <div class="ik1">
+      <div class="rfo">
+        <div>MON-SAT:7:00-18:00</div>
+        <div>/</div>
+        <div>SUNDAY:CLOSED</div>
+         </div>
+             
+         <div class="dx9">
+      
+      <div class="rf">
+        <img src="images/icons8-facebook-50.png" alt="">
+        <img src="images/icons8-twitter-bird-50.png" alt="">
+             <img src="images/icons8-behance-50.png" alt="">
+             <img src="images/icons8-pinterest-50.png" alt="">
+      </div>
+     
+      <div class="fr1">BOOK NOW</div>
+         </div>
+      </div>
+      </div>
+              <div style="width: 100vw; height: 1px;background-color: rgba(250, 250, 250, 0.6);;">
+             
+      </div>     
+    </section>
+  <header id="header">
+    
+    <section class="yg">
+<div class="a1">Sali<span>o</span>n.</div>
+<section class="biggest">
+     <div class="yt"><span class="yto">home</span>
+           <div class="tooltip">
+            <span class="yta1">main home</span>
+            <span class="yta2">HAIRSTYLE home</span>
+           </div>
+    
+    </div>
+      <div class="yt1"><span class="yto1">SERVICES</span>
+           <div class="tooltip1">
+            <span class="ytb1">SERVICES </span>
+            <span class="ytb2"></span>
+           </div>
+      </div>
+            
+           <div class="yt1"><span class="yto1">PORTFOLIO</span>
+           <div class="tooltip1">
+            <span class="ytb1">ISOTOP</span>
+            <span class="ytb1">TWO COLUMN</span>
+            <span class="ytb1">THREE COLUMN</span>
+            <span class="ytb1">FOUR COLUMN</span>
+            <span class="ytb1">FIVE COLUMN</span>
+            <span class="ytb1">MASONARY</span>
+
+
+          
+           </div>
+    
+    </div>
+                <div class="yt1"><span class="yto1">SHOP</span>
+           <div class="tooltip1">
+            <span class="ytb1">SHOP</span>
+            <span class="ytb1">CART</span>
+            <span class="ytb1">CHECKOUT</span>
+            <span class="ytb1">SINGLE PRODUCT</span>
+           </div>
+    </div>
+
+     <div class="yt1"><span class="yto1">PAGES</span>
+           <div class="tooltip1">
+            <span class="ytb1">ABOUT</span>
+            <span class="ytb1">TEAM</span>
+            <span class="ytb1">PRICING</span>
+            <span class="ytb1">FAQ</span>
+            <span class="ytb1">404</span>
+           </div>
+    </div>
+
+     <div class="yt1"><span class="yto1">BLOG</span>
+           <div class="tooltip1">
+            <span class="ytb1">BLOG GRID</span>
+            <span class="ytb1">BLOG LIST</span>
+            <span class="ytb1">BLOG DETAILS</span>
+           </div>
+    </div>
+
+     <div class="yt1"><span class="yto1"><a href="contact.html">CONTACT</a></span>
+           
+    </div>
+
+</section>
+
+<section class="biggest1">
+
+ 
+ <div class="biggest1a"><img class="beast" src="images/icons8-add-shopping-cart-50.png" alt="">
+  <div class="biggest1aa">
+    your cart is empty
+  </div>
+
+  
+  </div> 
+  <div class="biggest1b"><img src="images/icons8-search-50.png" alt="">
+
+  </div> 
+</section>
+<button><span  id="muj">☰</span> <span id="muj2" class="oju oju2">⊗</span></button>
+   </section>
+    <section class="links">
+    <div class="dec" id="jum">
+      <div class="ks0">
+
+  <div class="ks1"><div class="ks1a" id="xxo">HOME</div><div class="ks1b"><span id="xx1">+</span><div class="egg kj" id="egg"></div></div></div>
+  <div class="ks1c jok" id="gy">MAIN HOME</div>
+  <div class="ks1d jok" id="py">HAIRSTYLE HOME</div>
+  </div>
+   <div style="width: 100vw;color:black;height:0.2vw;background-color: black;"></div>
+   <div class="kt01">
+  <div class="kt1"><div class="kt1a" id="xxo1">SERVICES</div><div class="kt1b"><span id="xx11">+</span><div class="egg1 kj1" id="egg1"></div></div></div>
+  <div class="kt1c jok1" id="gy1">SERVICES</div>
+  <div class="kt1d jok1" id="py1"></div>
+  </div>
+   <div style="width: 100vw;color:black;height:0.2vw;background-color: black;"></div>
+     <div class="kt02">
+  <div class="kt2"><div class="kt2a" id="xxo2">PORTFOLIO</div><div class="kt2b"><span id="xx12">+</span><div class="egg2 kj2" id="egg2"></div></div></div>
+  <div class="kt2c jok2" id="gy2">ISTOP</div>
+  <div class="kt2d jok2" id="py2">TWO COLUMN</div>
+  <div class="kt2d jok2" id="py2a">THREE COLUMN</div>
+  <div class="kt2d jok2" id="py2b">FOUR COLUMN</div>
+  <div class="kt2d jok2" id="py2c">FIVE COLUMN</div>
+  <div class="kt2d jok2" id="py2d">MASONARY</div>
+  </div>
+   <div style="width: 100vw;color:black;height:0.2vw;background-color: black;"></div>
+    <div class="kt03">
+  <div class="kt3"><div class="kt3a" id="xxo3">SHOP</div><div class="kt3b"><span id="xx13">+</span><div class="egg3 kj3" id="egg3"></div></div></div>
+  <div class="kt3c jok3" id="gy3">shop</div>
+  <div class="kt3d jok3" id="py3">cart</div>
+  <div class="kt3d jok3" id="py3a">checkout</div>
+  <div class="kt3d jok3" id="py3b">single product</div>
+  </div>
+   <div style="width: 100vw;color:black;height:0.2vw;background-color: black;"></div>
+  <div class="kt04">
+  <div class="kt4"><div class="kt4a" id="xxo4">PAGES</div><div class="kt4b"><span id="xx14">+</span><div class="egg4 kj4" id="egg4"></div></div></div>
+  <div class="kt4c jok4" id="gy4">ABOUT</div>
+  <div class="kt4d jok4" id="py4">TEAM</div>
+  <div class="kt4d jok4" id="py4a">PRICING</div>
+  <div class="kt4d jok4" id="py4b">FAQ</div>
+  <div class="kt4d jok4" id="py4d">404</div>
+  </div>
+    <div style="width: 100vw;color:black;height:0.2vw;background-color: black;"></div>
+     <div class="kt05">
+    <div class="kt5"><div class="kt5a" id="xxo5">BLOG</div>
+    <div class="kt5b"><span id="xx15">+</span><div class="egg5  kj5" id="egg5"></div></div></div>
+  <div class="kt5c jok5" id="gy5">BLOG GRID</div>
+  <div class="kt5d jok5" id="py5">BLOG LIST</div>
+  <div class="kt5d jok5" id="py5a">BLOG DETAILS</div>
+  </div>
+   <div style="width: 100vw;color:black;height:0.2vw;background-color:rgba(0, 0, 0, 0.6);"></div>
+  <div class="kt06">
+  <a href="contact.html">
+  <div class="kt6"><div class="kt6a" id="xxo6"> CONTACT</div></div></a>
+  </div>
+  <div style="width: 100vw;color:black;height:0.2vw;background-color:rgba(0, 0, 0, 0.6);"></div>
+    </div>
+ </section>
+ </header>
+ <section class="home">
+  <div class="hh1 gook">
+  <div class="a2">collection</div>
+  <div class="a3">haircut&beard</div>
+  <div class="a4">there are many varation passages of lorem ipsum available but the dumm surffered which dont look even slightly blieveable</div>
+     <button>all services <img src="images/icons8-arrow-64.png" alt=""></button>
+
+  </div>
+ </section>
+ <section class="fr">
+ <section class="about from-right">
+  <div class="t1">about us <div></div> </div>
+  <div class="t2"><p>There are many variatons of passages ipsum available but the majority have suffered alteration </p></div>
+  <div class="t3"><p>in that some injected is humour or randomised words the which dont look slightly a beliveable.if you are lorem and ipsum you isn't anything embarasing</p></div>
+   <button>contact us <img src="images/icons8-arrow-64.png" alt="">
+</button>
+ </section>
+   <section class="styles from-right">
+    <div class="s1">
+      <img src="images/a17.avif" alt="">
+      <img src="images/a24.avif" alt="">
+    </div>
+       
+
+
+   </section>
+ </section>
+   <section class="fang" ></section>
+   <section class="info from-left">
+      <div class="ainfo"><img src="images/rrfvr5drv5vr.jpg" alt=""></div>
+      <div class="lmao">
+    <div class="dk">
+      <div class="f1">what we do <div></div></div>
+      <p>in that some injected is humour or randomised words the which dont look slightly a beliveable.if you are lorem and ipsum you isn't anything embarasing</p>
+    </div>
+  <div class="eex">
+<div class="i1">
+  <div class="i1a" id="cc"> <div class="sx"><img src="images/icons8-scissors-100.png" alt=""></div>
+  <div class="omo">
+    <div class="omo1">haircut style</div>
+    <p>There are many variations of passages lorem ipsu available but the majority a suffered alteratio some form more as more</p>
+  </div>
+  </div>
+</div>
+
+<div class="i1">
+  <div class="i1a" id="dd"> <div class="sx"><img src="images/icons8-barbershop-50.png" alt=""></div>
+  <div class="omo">
+    <div class="omo1">shaving style</div>
+    <p>There are many variations of passages lorem ipsu available but the majority a suffered alteratio some form more as more</p>
+  </div>
+  </div>
+</div>
+
+<div class="i1">
+  <div class="i1a" id="ee"><div class="sx"><img src="images/icons8-businessman-50.png" alt=""></div>
+    <div class="omo">
+    <div class="omo1">hair style</div>
+    <p>There are many variations of passages lorem ipsu available but the majority a suffered alteratio some form more as more</p>
+  </div>
+  </div>
+</div>
+  </div>
+      </div>
+   </section>
+   <section class="var">
+   <section class="prices from-right">
+    <div class="p1">
+      our fair prices
+      <div></div>
+    </div>
+     <div class="p1a">
+
+     
+    <div class="p2">
+     <div class="p3">
+
+      <div class="p4">
+        <div class="p41">
+          <div class="p41a">
+            haircuts
+            <div class="p41b">125$</div>
+          </div>
+          <div class="p41c">clean and simple 30-40 minutes</div>
+          <hr>
+        </div>
+        
+          <div class="p41">
+          <div class="p41a">
+            skin fade
+            <div class="p41b">145$</div>
+          </div>
+          <div class="p41c">haircuts blends to skin</div>
+          <hr>
+        </div>
+        <div class="p41">
+          <div class="p41a">
+            buzz cut
+            <div class="p41b">75$</div>
+          </div>
+          <div class="p41c">clipers only cut all over</div>
+          <hr>
+        </div>
+        <div class="p41">
+          <div class="p41a">
+            chop haircut
+            <div class="p41b">75$</div>
+          </div>
+          <div class="p41c">junior under 14</div>
+          <hr>
+        </div>
+        <div class="p41">
+          <div class="p41a">
+            colouring
+            <div class="p41b">325$</div>
+          </div>
+          <div class="p41c">junior under 14</div>
+  
+        </div>
+        
+
+
+        <div class="pl">more prices <img src="images/icons8-right-arrow-50.png" alt=""></div>
+
+
+
+
+      </div>
+     </div>
+    </div>
+  </div>
+
+   </section>
+   <section class="schedule from-left">
+
+    <div class="s0">our schedule
+      <div></div>
+    </div>
+
+<div class="s1a">
+    <div class="s2">
+      <div class="s3">
+      <div class="s4">
+        <div class="s41">
+          <div class="s41a">
+            available appointment on september 3, 2021
+            <div class="s41b">calender</div>
+          </div>
+          <div class="s41c"></div>
+          <hr>
+        </div>
+
+           <div class="s41">
+          <div class="s41ab">
+            <div class="s4af">
+            <img src="images/icons8-timer-30.png" alt="">
+            12:00 am-2:00am 
+            </div>
+            <div class="s41bb"><button>unavailable</button></div>
+          </div>
+          <div class="s41cb">9 spaces available</div>
+          <hr>
+        </div>
+         <div class="s41">
+          <div class="s41ab">
+            <div class="s4af">
+            <img src="images/icons8-timer-30.png" alt="">
+            12:00 am-2:00am 
+            </div>
+            <div class="s41bbc"><button>book appointment</button></div>
+          </div>
+          <div class="s41cb">9 spaces available</div>
+          <hr>
+        </div>
+         <div class="s41">
+          <div class="s41ab">
+            <div class="s4af">
+            <img src="images/icons8-timer-30.png" alt="">
+            12:00 am-2:00am 
+            </div>
+            <div class="s41bb"><button>unavailable</button></div>
+          </div>
+          <div class="s41cb">9 spaces available</div>
+          <hr>
+        </div>
+         <div class="s41">
+          <div class="s41ab">
+            <div class="s4af">
+            <img src="images/icons8-timer-30.png" alt="">
+            12:00 am-2:00am 
+            </div>
+            <div class="s41bbc"><button>book appointment</button></div>
+          </div>
+          <div class="s41cb">9 spaces available</div>
+          <hr>
+        </div>
+         
+
+
+
+      </div>
+    </div>
+    </div>
+   </section>
+   </section>
+   <section class="unknown from-left">
+    <div class="u0">
+    <div class="u1">offer promotion</div>
+    <div class="u2">our special hand made cream</div>
+     </div>
+    <p>There are many variations of passages of lorem ipsum majority have is suffered alteration in that some form beliveable</p>
+    <div class="u3"><span>$45.00 </span> <button>More <img src="images/icons8-right-arrow-50.png" alt=""></button></div>
+   </section>
+   <section class="frag">
+<section class="haircut from-right">
+  <div class="h1" id="h14">
+    
+    <div class="book" id="cook">
+    <div class="h1a">mustache trimming</div>
+    <p>There are many variations of passages of lorem that ipsum is in any available</p>
+    <button id="ddz">read more <img src="images/icons8-right-arrow-50.png" alt=""></button>
+     </div>
+     
+  </div>
+  <div class="h2" id="h2">
+     <div class="pook" id="look">
+    <div class="h2a">styling</div>
+    <p>There are many variations of passages of lorem that ipsum is in any available</p>
+    <button id="ddz">read more <img src="images/icons8-right-arrow-50.png" alt=""></button>
+     </div>
+  </div>
+</section>
+<section class="work from-left">
+ <div class="work1">discover our works <div></div></div>
+ <p class="work2">There are many variations of passages of lorem that ipsum is any available</p>
+ <button class="work3">all works<img src="images/icons8-arrow-64.png" alt=""></button>
+</section>
+   </section>
+<section class="works from-right">
+  <div class="wok">
+    <div class="wok1" id="wok1">
+      <div class="wok1a" id="wok1a">
+        <div class="wok1aa">sleek and shiny</div>
+        <p>There are many variations of passages of lorem that ipsum is any available</p>
+        <button> Read More<img src="images/icons8-right-arrow-50.png" alt=""></button>
+      </div>
+    </div>
+    <div class="wok2" id="wok2">
+      <div class="wok2a" id="wok2a">
+        <div class="wok2aa">haircut & blowdry</div>
+        <p>There are many variations of passages of lorem that ipsum is any available</p>
+        <button> Read More<img src="images/icons8-right-arrow-50.png" alt=""></button>
+      </div>
+    </div>
+    </div>
+  </div>
+       
+   <div class="wok">
+    <div class="wok3" id="wok3">
+      <div class="wok3a" id="wok3a">
+        <div class="wok3aa">shampo set with haircut</div>
+        <p>There are many variations of passages of lorem that ipsum is any available</p>
+        <button> Read More<img src="images/icons8-right-arrow-50.png" alt=""></button>
+      </div>
+    </div>
+    <div class="wok4" id="wok4">
+      <div class="wok4a" id="wok4a">
+        <div class="wok4aa">colouring</div>
+        <p>There are many variations of passages of lorem that ipsum is any available</p>
+        <button> Read More<img src="images/icons8-right-arrow-50.png" alt=""></button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+</section>
+<section class="fragment from-left">
+ <section class="team">
+  <div class="m1">dedicate our team<div></div></div>
+  <p class="m2">There are many varaitions of passages of lorem ipsum the injected humour randomised word</p>
+  <div class="meat">
+     <div class="team2">
+      <div class="te1" id="te1">
+        <div class="te1a  z1" id="te1a">
+          <div class="te1b">mark liuw</div>
+          <p class="te1c"> There are many variations of passages but the to suffered</p>
+        </div>
+        </div>
+      
+      <div class="te2" id="te2">
+        <div class="te2a z2" id="te2a">
+          <div class="te2b">mark porter</div>
+          <p class="te2c"> There are many variations of passages but the to suffered</p>
+      </div>
+     </div>
+     </div>
+
+       <div class="team3">
+      <div class="te3" id="te3">
+        <div class="te3a z3" id="te3a">
+          <div class="te3b">angela kwang</div>
+          <p class="te3c"> There are many variations of passages but the to suffered</p>
+        </div>
+        </div>
+      
+      <div class="te4" id="te4">
+        <div class="te4a  z4" id="te4a">
+          <div class="te4b">diana gray</div>
+          <p class="te4c"> There are many variations of passages but the to suffered</p>
+      </div>
+     </div>
+     </div>
+
+     </div>
+     <button class="">all members<img src="images/icons8-arrow-64.png" alt=""></button>
+
+ </section>
+<section class="meme from-right">
+  <button class="">all members<img src="images/icons8-arrow-64.png" alt=""></button>
+   <section class="meme2"></section>
+</section>
+</section>
+<section class="comment from-left">
+  <div class="comm1">what clients say<div></div></div>
+  <div class="comm2"><p> Thereare many variations of passages of lorem ipsum the injected humour randomised word</p> <button>see more <img src="images/icons8-arrow-64.png" alt=""></button></div>
+
+
+
+  <div class="comm3">
+   <div class="comm31">
+    <span>❝</span>
+    <p>There are many variations of passages of lorem ipsum that available by injecred humour or randomised don't look off even slightly the at beliveable </p>
+    <div>lucinda banfield</div>
+   </div>
+    <div class="comm32">
+      <span>❝</span>
+    <p>There are many variations of passages of lorem ipsum that available by injecred humour or randomised don't look off even slightly the at beliveable </p>
+    <div>lucinda banfield</div>
+    </div>
+  </div>
+</section>
+<section class="video from-right">
+  <button><img src="images/icons8-circled-play-button-50.png" alt=""></button>
+  <div>intro video</div>
+  <p>There are many variations of lorem ipsum available but the majority injected humour randomised word</p>
+</section>
+<section class="blog from-right">
+  <div class="blog1">from our blog<div></div></div>
+  <div class="blog2"><p> Thereare many variations of passages of lorem ipsum the injected humour randomised word</p> <button>All Post<img src="images/icons8-arrow-64.png" alt=""></button></div>
+</section>
+  <section class="ogov">
+  <div class="blog3 from-left">
+<div class="bblog3">
+  <div class="blog3a">
+  <button>Haircut</button>
+  </div>
+<div class="bblog31">
+
+  <div class="log1"><img src="images/calendar.png" alt="">March 3,2021</div>
+  <div class="log2"> <img src="images/chat.png" alt="">0 comment</div>
+</div>
+
+<div class="log0">The 90's are back and we're okay with many more ready works it</div>
+</div>
+</div>
+
+
+<section class="othercomment from-left">
+  <div class="oc1">
+   <img class="oc0" src="images/a13.avif" alt="">
+   <div>
+    <div class="oco">
+   <div class="oc11"><img src="images/calendar.png" alt="">March 3,2021</div>
+  <div class="oc12"><img src="images/chat.png" alt=""> 0 comment</div>
+  </div>
+<div class="oc10">men's fade haircut-the tips every man should know</div>
+</div>
+
+  </div>
+
+   <div class="oc1">
+   <img class="oc0" src="images/a16.avif" alt="">
+   <div>
+    <div class="oco">
+   <div class="oc11"><img src="images/calendar.png" alt="">March 3,2021</div>
+  <div class="oc12"><img src="images/chat.png" alt=""> 0 comment</div>
+  </div>
+<div class="oc10">the evolution of the best men's hair desing trend today</div>
+</div>
+
+  </div>
+   <div class="oc1">
+   <img class="oc0" src="images/a21.avif" alt="">
+   <div>
+    <div class="oco">
+   <div class="oc11"><img src="images/calendar.png" alt="">March 3,2021</div>
+  <div class="oc12"><img src="images/chat.png" alt=""> 0 comment</div>
+  </div>
+<div class="oc10">learn how to communicate with your item to customer effectively</div>
+</div>
+
+  </div>
+</section>
+</section>
+<section class="allimage">
+</section>
+<footer class="from-right">
+  <section class="f00t">
+  <div class="f0t">
+    <div class="f0t1">
+      <div class="f0t1a">
+        <div>sali<span>o</span>n</div>
+        <p>subscribe your News letter</p>
+      </div>
+      <div class="f0t1b"><button class="f0t1b1">Enter email</button>
+      <button class="f0t1b2">send</button></div>
+    </div>
+  </div>
+  <div class="fd"></div>
+       <div class="yes">
+        <div class="yes1">
+          <div style="display: flex;flex-direction: column;align-items:start;">
+             <div>contact us</div>
+             <p><img src="images/icons8-location-50.png" alt="">329 Queensbery street,CA559,united states</p>
+             <p><img src="images/email_10766457.png" alt="">admin@ownmail.com</p>
+             <p><img src="images/Phone-Call-Pause--Streamline-Core-Gradient.png" alt="">+123 456 780 123</p>
+          </div>
+             <div style="display: flex;flex-direction: column;align-items:start;">
+             <div>our products</div>
+             <p>> shampoo</p>
+             <p>> Conditioner</p>
+             <p>> Treament</p>
+             <p>> Styling Products</p>
+             <p>>Brushes&Combs</p>
+             </div>
+
+        </div>
+        <div class="yes2">
+             <div class="ed" style="display: flex;flex-direction: column;align-items:start;">
+          <div>best services</div>
+             <p>> Hair Cutting</p>
+             <p>> Hair Styling</p>
+             <p>> Detan&Bleach</p>
+             <p>> Facials</p>
+             <p>> Hair colouring</p>
+             </div>
+             <div style="display: flex;flex-direction: column;align-items:start;">
+             <div>recent posts</div>
+              <section class="gt1">
+                <img src="images/hgfff.jpg" alt="">
+                <section class="gt1a"><p style="color: rgb(235, 123, 100);">April 8,2021</p>
+                <p>The 90's are back and we're okay with many more ready works it</p></section>
+                </section>
+              <section class="gt2">
+                <img src="images/hgfff.jpg" alt="">
+                <section class="gt2a">
+                  <p style="color: rgb(235, 123, 100);">April 8,2021</p>
+                <p>men's fade haircut-the tips every man should know</p>
+                </section>
+              </section>
+                </div>
+              </div>
+       </div>
+              
+      <div class="fd"></div>
+      <p style="color: white;width: 80vw;text-align: center;">copyright@2025 salion by RadiusTheme.All Right Reserved</p>
+            
+</section>
+</footer>
+<script>
+
+const loaderDelay = 6000;
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const loader = document.getElementById("loader");
+    loader.style.opacity = "0"; 
+
+  
+    setTimeout(() => {
+      loader.style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }, 1000);
+  }, loaderDelay);
+});
+  
+   const c =document.getElementById('cook');
+   const d=document.getElementById('h14');
+   const dd=document.getElementById('ddz');
+    const ed=document.getElementById('h2');
+    const  cc =document.getElementById('look');
+
+    d.addEventListener('click', () =>{
+       c.classList.remove('book');
+       c.classList.add('sook');
+       cc.classList.add('pook');
+    });
+  
+     window.addEventListener('scroll', () => {
+      c.classList.add('book')
+      dd.classList.remove('fook');
+      cc.classList.add('pook');
+     })
+
+     dd.addEventListener('click', () =>{
+      dd.classList.add('fook');
+      dd.classList.remove('lb')
+     });
+
+       ed.addEventListener('click', () =>{
+       cc.classList.remove('pook');
+        cc.classList.add('gook');
+        c.classList.add('book')
+
+    });
+
+         const a=document.getElementById('wok1')
+         const aa=document.getElementById('wok2')
+         const aaa=document.getElementById('wok3')
+         const aaaa=document.getElementById('wok4')
+         const ab=document.getElementById('wok1a')
+         const ac=document.getElementById('wok2a')
+         const ad=document.getElementById('wok3a')
+         const ae=document.getElementById('wok4a')
+
+      a.addEventListener('click', () => {
+        ab.classList.remove('wok1a')
+        ab.classList.add('rook')
+         ac.classList.add('wok2a');
+        ad.classList.add('wok3a');
+        ae.classList.add('wok4a');
+      })
+          aa.addEventListener('click', () => {
+        ac.classList.remove('wok2a')
+        ac.classList.add('rook')
+         ad.classList.add('wok3a');
+        ae.classList.add('wok4a');
+         ab.classList.add('wok1a');
+      })
+       aaa.addEventListener('click', () => {
+        ad.classList.remove('wok3a')
+        ad.classList.add('rook')
+         ab.classList.add('wok1a');
+        ac.classList.add('wok2a');
+        ae.classList.add('wok4a');
+      })
+       aaaa.addEventListener('click', () => {
+        ae.classList.remove('wok4a')
+        ae.classList.add('rook')
+        ab.classList.add('wok1a');
+        ac.classList.add('wok2a');
+        ad.classList.add('wok3a');
+      })
+
+
+      window.addEventListener('scroll', () => {
+        ab.classList.add('wok1a');
+        ac.classList.add('wok2a');
+        ad.classList.add('wok3a');
+        ae.classList.add('wok4a');
+      })
+
+
+
+       const x1=document.getElementById('te1')
+       const x2=document.getElementById('te2')
+       const x3=document.getElementById('te3')
+       const x4=document.getElementById('te4')
+       const x1a=document.getElementById('te1a')
+       const x2a=document.getElementById('te2a')
+       const x3a=document.getElementById('te3a')
+       const x4a=document.getElementById('te4a')
+
+       x1.addEventListener('click', () => {
+        x1a.classList.remove('z1')
+         x2a.classList.add('z2')
+        x3a.classList.add('z3')
+        x4a.classList.add('z4')
+        x1a.classList.add('zook')
+       })
+
+       x2.addEventListener('click', () => {
+        x2a.classList.remove('z2')
+        x3a.classList.add('z3')
+        x4a.classList.add('z4')
+         x1a.classList.add('z1')
+         x2a.classList.add('zook')
+       })
+       
+       x3.addEventListener('click', () => {
+        x3a.classList.remove('z3')
+         x1a.classList.add('z1')
+        x2a.classList.add('z2')
+        x4a.classList.add('z4')
+        x3a.classList.add('zook')
+
+       })
+
+       x4.addEventListener('click', () => {
+        x4a.classList.remove('z4')
+         x1a.classList.add('z1')
+        x2a.classList.add('z2')
+        x3a.classList.add('z3')
+        x4a.classList.add('zook')
+       })
+
+
+       window.addEventListener('scroll', () => {
+        x1a.classList.add('z1')
+        x2a.classList.add('z2')
+        x3a.classList.add('z3')
+        x4a.classList.add('z4')
+
+       })
+
+
+      const ll=document.getElementById('xxo')
+      const lk=document.getElementById('xx1')
+      const ln=document.getElementById('gy')
+       const lh=document.getElementById('py')
+       const  ly=document.getElementById('egg')
+
+
+      lk.addEventListener('click', () => {
+            ln.classList.remove('jok')
+            lh.classList.remove('jok')
+            ly.classList.remove('egg')
+            lk.classList.add('egg')
+            ll.classList.add('zok')
+            ln.classList.add('zok')
+
+      })
+
+      ly.addEventListener('click', () => {
+        ln.classList.add('jok')
+         lh.classList.add('jok') 
+         lk.classList.remove('egg')
+         ly.classList.add('egg')
+         ll.classList.remove('zok')
+         ln.classList.remove('zok')
+      })
+
+
+        const ll1=document.getElementById('xxo1')
+      const lk1=document.getElementById('xx11')
+      const ln1=document.getElementById('gy1')
+       const lh1=document.getElementById('py1')
+       const  ly1=document.getElementById('egg1')
+
+
+      lk1.addEventListener('click', () => {
+            ln1.classList.remove('jok1')
+            lh1.classList.remove('jok1')
+            ly1.classList.remove('egg1')
+            lk1.classList.add('egg1')
+            ll1.classList.add('zok1')
+            ln1.classList.add('zok1')
+
+      });
+
+      ly1.addEventListener('click', () => {
+        ln1.classList.add('jok1')
+         lh1.classList.add('jok1') 
+         lk1.classList.remove('egg1')
+         ly1.classList.add('egg1')
+         ll1.classList.remove('zok1')
+         ln1.classList.remove('zok1')
+      });
+
+
+         const ll2=document.getElementById('xxo2')
+      const lk2=document.getElementById('xx12')
+      const ln2=document.getElementById('gy2')
+       const lh2=document.getElementById('py2')
+       const lh2a=document.getElementById('py2a')
+       const lh2b=document.getElementById('py2b')
+       const lh2c=document.getElementById('py2c')
+       const lh2d=document.getElementById('py2d')
+       const  ly2=document.getElementById('egg2')
+
+      lk2.addEventListener('click', () => {
+            ln2.classList.remove('jok2')
+            lh2.classList.remove('jok2')
+            lh2a.classList.remove('jok2')
+            lh2b.classList.remove('jok2')
+            lh2c.classList.remove('jok2')
+            lh2d.classList.remove('jok2')
+            ly2.classList.remove('egg2')
+            lk2.classList.add('egg2')
+            ll2.classList.add('zok2')
+            ln2.classList.add('zok2')
+
+      });
+
+      ly2.addEventListener('click', () => {
+        ln2.classList.add('jok2')
+         lh2.classList.add('jok2')
+         lh2a.classList.add('jok2')
+         lh2b.classList.add('jok2') 
+         lh2c.classList.add('jok2') 
+         lh2d.classList.add('jok2') 
+         lk2.classList.remove('egg2')
+         ly2.classList.add('egg2')
+         ll2.classList.remove('zok2')
+         ln2.classList.remove('zok2')
+      });
+
+
+        const ll3=document.getElementById('xxo3')
+      const lk3=document.getElementById('xx13')
+      const ln3=document.getElementById('gy3')
+       const lh3=document.getElementById('py3')
+       const lh3a=document.getElementById('py3a')
+       const lh3b=document.getElementById('py3b')
+       const  ly3=document.getElementById('egg3')
+
+
+      lk3.addEventListener('click', () => {
+            ln3.classList.remove('jok3')
+            lh3.classList.remove('jok3')
+            lh3a.classList.remove('jok3')
+            lh3b.classList.remove('jok3')
+            ly3.classList.remove('egg3')
+            lk3.classList.add('egg3')
+            ll3.classList.add('zok3')
+            ln3.classList.add('zok3')
+
+      });
+
+      ly3.addEventListener('click', () => {
+        ln3.classList.add('jok3')
+         lh3.classList.add('jok3') 
+         lh3a.classList.add('jok3')
+         lh3b.classList.add('jok3')
+         lk3.classList.remove('egg3')
+         ly3.classList.add('egg3')
+         ll3.classList.remove('zok3')
+         ln3.classList.remove('zok3')
+      });
+
+
+       const ll4=document.getElementById('xxo4')
+      const lk4=document.getElementById('xx14')
+      const ln4=document.getElementById('gy4')
+       const lh4=document.getElementById('py4')
+       const lh4a=document.getElementById('py4a')
+       const lh4b=document.getElementById('py4b')
+       const lh4d=document.getElementById('py4d')
+       const  ly4=document.getElementById('egg4')
+
+
+      lk4.addEventListener('click', () => {
+            ln4.classList.remove('jok4')
+            lh4.classList.remove('jok4')
+            lh4a.classList.remove('jok4')
+            lh4b.classList.remove('jok4')
+            lh4d.classList.remove('jok4')
+            ly4.classList.remove('egg4')
+            lk4.classList.add('egg4')
+            ll4.classList.add('zok4')
+            ln4.classList.add('zok4')
+
+      });
+
+      ly4.addEventListener('click', () => {
+        ln4.classList.add('jok4')
+         lh4.classList.add('jok4') 
+         lh4a.classList.add('jok4')
+         lh4b.classList.add('jok4')
+         lh4d.classList.add('jok4')
+         lk4.classList.remove('egg4')
+         ly4.classList.add('egg4')
+         ll4.classList.remove('zok4')
+         ln4.classList.remove('zok4')
+    });
+
+
+     const ll5=document.getElementById('xxo5')
+      const lk5=document.getElementById('xx15')
+      const ln5=document.getElementById('gy5')
+       const lh5=document.getElementById('py5')
+       const lh5a=document.getElementById('py5a')
+       const lh5b=document.getElementById('py5b')
+       const ly5=document.getElementById('egg5')
+
+        lk5.addEventListener('click', () => {
+           lk5.classList.add('egg5')
+           ly5.classList.remove('egg5')
+           ln5.classList.remove('jok5')
+           lh5.classList.remove('jok5')
+           lh5a.classList.remove('jok5')
+        });
+
+        ly5.addEventListener('click', () => {
+          lk5.classList.remove('egg5')
+          ly5.classList.add('egg5')
+           ln5.classList.add('jok5')
+           lh5.classList.add('jok5')
+           lh5a.classList.add('jok5')
+        });
+        
+        
+     const vc=document.getElementById('muj')
+     const cv=document.getElementById('jum')
+     const vcc=document.getElementById('muj2') 
+
+      vc.addEventListener('click', () => {
+        cv.classList.remove('dec')
+        cv.classList.add('goku')
+        vc.classList.add('oju')
+        vcc.classList.remove('oju')
+        vcc.classList.add('goku')
+      });
+
+      vcc.addEventListener('click', () => {
+        vcc.classList.add('oju')
+        cv.classList.add('dec')
+        cv.classList.add('goku')
+        vc.classList.remove('oju')
+      } )
+
+
+      window.addEventListener('scroll', () =>{
+         vcc.classList.add('oju')
+        cv.classList.add('dec')
+        cv.classList.add('goku')
+        vc.classList.remove('oju')
+      })
+
+
+      window.addEventListener("scroll", function() {
+  const header = document.getElementById("header");
+  if (window.scrollY > 70) { 
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+       
+let lastScroll = 0;
+const box = document.getElementById('fixedBox');
+
+window.addEventListener('scroll', () => {
+  let currentScroll = window.scrollY;
+
+  if (currentScroll > lastScroll) {
+    box.style.top = "-80px"; 
+  } else {
+    
+    box.style.top = "0";
+  }
+
+  lastScroll = currentScroll;
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.from-left, .from-right').forEach(el => observer.observe(el));
+
+const header2 = document.getElementById("header");
+ window.addEventListener('scroll',() => {
+      if (window.innerWidth >2404){
+  if (window.scrollY > 70){
+    header2.style.top = "0"
+  }  else{
+    header2.style.top = "2.5vw"
+  }
+ 
+} else{
+  header2.style.top ="0"
+}
+
+})
+
+  
+</script>
+  
+</body>
+</html>
