@@ -372,7 +372,7 @@
         margin-top: 0vw;
 
    }
-     .omo p{
+      .omo p{
       font-size: 2vw;
      }
 
@@ -491,10 +491,13 @@
       justify-content: space-between;
       color: white;
     }
+    .p41{
+    }
 
     .p41c{
       color: white;
       font-size: 2vw;
+      padding-bottom: 3vw;
     }
 
 
@@ -760,7 +763,7 @@
         border-radius: 1vw;
          background-size: cover;
         background-repeat: no-repeat;
-
+        
 
         }
 
@@ -824,6 +827,12 @@
       display:none;
       
      }
+        .lamb{
+          
+          box-shadow: 5vw 0 0 0 rgba(0, 0, 0, 0.6);
+        }
+      
+     
 
      .sook{
         animation: upM 1s ease-out;
@@ -1797,8 +1806,8 @@
 
 
         .oc10{
-        font-size: 2.2vw;
-        font-weight: bolder;
+        font-size: 4vw;
+        font-weight: lighter;
         margin-left: 1vw;
         padding-bottom: 1vw;
         text-transform: capitalize;
@@ -1808,8 +1817,8 @@
       }
 
       .oc0{
-        width: 15vw;
-        height: 10vw;
+        width: 20vw;
+        height: 20vw;
         border-radius: 1vw 0 0 1vw;
       }
 
@@ -1833,12 +1842,15 @@
         justify-content: center;
         align-items: center;
         gap: 1vw;
+        margin-top: 5vw;
        }
        .oc12{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1vw;
+        margin-top: 5vw;
+
        }
 
          .oco{
@@ -1928,12 +1940,13 @@
          .yes1 div{
           font-size: 3vw;
           text-transform: capitalize;
-          font-weight: bolder;
+          font-weight:lighter;
           color: white;
           font-family: 'Teko', sans-serif;
 
          }
          .yes1 p{
+          font-weight: lighter;
           font-size: 2vw;
           color: white;
           display: flex;
@@ -1947,6 +1960,7 @@
           
          }
          .yes{
+          padding-top: 5vw;
           display: flex;
           width: 80vw;
           justify-content: space-between;
@@ -1961,7 +1975,7 @@
          .yes2 div{
           font-size: 3vw;
           text-transform: capitalize;
-          font-weight: bolder;
+          font-weight: lighter;
           color: white;
           font-family: 'Teko', sans-serif;
          }  
@@ -1975,6 +1989,7 @@
          .yes2 p{
           font-size: 2vw;
           color: white;
+          font-weight: lighter;
       font-family: 'Open Snans', sans-serif;
          }
          .yes2 p img{
@@ -1983,19 +1998,28 @@
          }
 
          .gt1 img{
-          width: 15vw;
+          width: 10vw;
+          height: 10vw;
          }
          .gt2 img{
-          width: 15vw;
+          width: 10vw;
+          height: 10vw;
          }
 
          .gt2{
           display: flex;
           gap: 2vw;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2vw;
          }
           .gt1{
           display: flex;
+          justify-content: center;
+          align-items: center;
           gap: 2vw;
+          font-size: 1vw;
+          margin-top: 1vw;
          }
       /*--------footerend---*/
       /*------links----*/ 
@@ -2565,6 +2589,7 @@
   position: relative;
   width: 200px;
   height: 200px;
+  
 }
 
 .loader img {
@@ -2618,15 +2643,53 @@ gap: 2vw;}
             .omo:hover{
                   border-left: 1px solid white;
                  }
+                         .a2, .a3{
+                          font-size: 5vw;
+                         }
+                         .a4{
+                          font-size: 2vw;
+                         }
+                         .hh1{
+                              position: absolute;
+      animation: teleport 10s infinite;
+    }
 
+    @keyframes teleport {
+      0% {
+        right: 0;   /* start at right */
+        left: auto;
+        opacity: 1;
+      }
+      40% {
+        opacity: 0; /* disappear */
+      }
+      50% {
+        left: 0;    /* instantly appear at left */
+        right: auto;
+        opacity: 1;
+      }
+      90% {
+        opacity: 0; /* disappear again */
+      }
+      100% {
+        right: 0;   /* instantly back to right */
+        left: auto;
+        opacity: 1;
+      }
+    }
+                             
+    
+                         
 
              header{
               height: 5vw;
               transition: background-color 0.3s ease;
               position: fixed;
+              padding-top: 1vw;
+              padding-bottom: 1vw;
               top:2.5vw;
               background: transparent;
-              z-index: 9999;
+              z-index: 9998;
               
              }
 
@@ -2638,7 +2701,7 @@ gap: 2vw;}
              body{
               display: flex;
               flex-direction: column;
-              gap: 5vw;
+              gap: 2vw;
               justify-content: center;
               align-items: center;
              }
@@ -2651,6 +2714,31 @@ gap: 2vw;}
               gap: 2vw;
               margin-left: 8vw;
               
+             }
+                .about button{
+                  font-size: 1.5vw;
+                  width: 13vw;
+                  padding-top: 0.5vw ;
+                  padding-bottom: 0.5vw;
+                  padding-left: 0.5vw;
+                  padding-right: 0.5vw;
+                  
+                }
+                .about button img{
+                  width: 2vw;
+                }
+
+               .about{
+                width: 35vw;
+                gap: 0.5vw;
+               }
+
+             .t1{
+              font-size: 3vw;
+              font-weight: lighter;
+             }
+             .t2, .t3{
+              font-size: 1.5vw;
              }
 
 
@@ -2812,6 +2900,13 @@ gap: 2vw;}
                               font-weight: bolder;
                                      }
 
+                                     .fr{
+                                      display: flex;
+                                      gap: 2vw;
+                                      justify-content: center;
+                                      align-items: center;
+                                     }
+
 
 
                                      #muj{
@@ -2825,10 +2920,10 @@ gap: 2vw;}
                                    }
 
                                    .t2{
-                                    width: 40vw;
+                                    width: 30vw;
                                    }
                                        .s1 img{
-                                        width: 25vw;
+                                        width: 20vw;
                                 
                                   }
    
@@ -2848,7 +2943,7 @@ gap: 2vw;}
                                    }
 
                                    .ainfo{
-                                     width: 50vw;
+                                     width: 40vw;
                                     height:auto;
                                     margin-left: 2vw;
                                   
@@ -2856,32 +2951,51 @@ gap: 2vw;}
                                    }
                                      .ainfo img{
                                       width: 60vw;
-                                      height: 70vw;
+                                      height: 60vw;
 
+                                     }
+                                     
+                                     .i1 div img{
+                                      height: 10vw;
+                                      width: auto;
                                      }
 
                                     .i1a{
                                       width: 50vw;
                                       margin-top: 2vw;
+                                      height: 10vw;
                                     }
    
                                    .lmao{
                                     position: relative;
                                     z-index: 5;
                                     width: 60vw;
-                                    gap: 3vw;
+                                    gap: 1vw;
                                     right: 7vw;
                                    }
                                      .dk p{
                                       width: 49vw;
                                      }
+                                     .omo{
+                                      height:6vw;
+                                     }
    
                                        .omo1{
-                                        font-size: 3vw;
+                                        font-size: 2vw;
+                                        font-weight: lighter;
 
                                        }
+                                        .omo{
+                                        font-size: 2vw;
+                                        width: auto;
+                                        height: auto;
+                                       }
+                                       .eex{
+                                        gap: 1vw;
+                                       }
+
                                        .omo p{
-                                        font-size: 1.5vw;
+                                        font-size: 1.2vw;
                                        }
    
    
@@ -2896,24 +3010,46 @@ gap: 2vw;}
 
                                         .prices{
                                           margin-top: 0;
+                                          height: 70vw;
                                         }
+
+                                          .p41c{
+                                            font-size: 1.5vw;
+                                            padding-bottom: 1vw;
+                                          }
+
                                            .p1a{
                                             width: 40vw;
                                            }
 
                                            .p2, .p3{
                                             width: 40vw;
-                                            height: 60vw;
+                                            height: 43vw;
                                            }
                                               .s1a{
                                                 width: 40vw;
                                               }
                                               .s2{
                                                 width: 40vw;
-                                                height: 60vw;
+                                                height: 43vw;
                                               }
                                               .p4{
                                                 width: 35vw;
+                                              }
+
+                                              .s0, .p1{
+                                                font-size: 3vw;
+                                                font-weight: lighter;
+                                              }
+
+                                              .pl{
+                                                padding-bottom: 0.5vw;
+                                                margin-left: 20vw;
+                                                font-size: 2vw;
+                                              }
+
+                                              .pl img{
+                                                width: 2vw;
                                               }
 
                                                   .fang{
@@ -2921,6 +3057,7 @@ gap: 2vw;}
                                                   }
 
                                                  .s3{
+                                                  height: 43vw;
                                                   display: flex;
                                                   justify-content: center;
                                                   align-items: center;
@@ -2936,6 +3073,7 @@ gap: 2vw;}
 
                                               .p41a{
                                                 width: 35vw;
+                                                font-size: 2vw;
                                               }
 
 
@@ -2967,7 +3105,7 @@ gap: 2vw;}
                                                      }
 
                                                      .s41a{
-                                                      
+                                                      padding-top: 0;
                                                       font-size: 1.5vw;
                                                      }
 
@@ -2979,10 +3117,13 @@ gap: 2vw;}
                                                      .s41b{
                                                       font-size: 1.5vw;
                                                      }
+                                                     .s41cb{
+                                                      font-size: 1vw;
+                                                     }
 
                                                      .s3{
                                                       width: 40vw;
-                                                      height: 60vw;
+                                                      height: 43vw;
                                                       display: flex;
                                                       flex-direction: column;
                                                       justify-content: center;
@@ -2992,6 +3133,7 @@ gap: 2vw;}
                                                      .schedule{
                                                       margin-top: 0;
                                                       padding-top: 0;
+                                                      height: 70vw;
                                                      }
 
                                                      
@@ -3013,19 +3155,20 @@ gap: 2vw;}
                                                     }
 
                                                    .h2{
-                                                    width: 25vw;
-                                                    height: 30vw;
+                                                    width: 20vw;
+                                                    height: 25vw;
                                                    }
                                                      .h1a{
                                                       font-size: 2vw;
-                                                      margin-top: 15vw;
+                                                      margin-top: 8vw;
+                                                      
                                                      }
 
                                                .h2a{
-                                                margin-top: 15vw;
+                                              
                                                 font-size: 2vw;
-                                               }     
-
+                                               } 
+                                               
                                                 .h2 p{
                                                   font-size: 1.5vw;
                                                 }
@@ -3040,11 +3183,12 @@ gap: 2vw;}
                                                 }
 
                                                     .h1{
-                                                      width: 25vw;
-                                                      height: 30vw;
+                                                      width: 20vw;
+                                                      height: 25vw;
                                                     }
                                                     .h2a{
                                                       font-size: 2vw;
+                                                      margin-top: 8vw;
                                                     }
 
                                                     .h1 p{
@@ -3052,33 +3196,48 @@ gap: 2vw;}
 
                                                     }
 
+
+                                                   
+
                                                 .frag{
                                                   display: flex;
-                                                  width: 80vw;
+                                                  width: 70vw;
                                                 }
+                                                .work1{
+                                                font-size: 2.5vw;
+                                                margin-top: 3vw;
+                                                }
+
+                                                        .work2{
+                                                          font-size: 1.5vw;
+                                                          padding-top: 2vw;
+                                                          padding-bottom: 2vw;
+                                                        }
+
+
                                                    .work{
                                                     margin-top:10vw;
                                                    }
 
                                                    .works{
                                                     display: flex;
+                                                    
                                                    }
 
                                                    
                  .wok1, .wok2, .wok3, .wok4{
-                  width: 20vw;
-                  height: 20vw;
+                  width: 18vw;
+                  height: 25vw;
                  }
 
                  .wok{
                   all: unset;
                   display: flex;
-                  gap: 3vw;
+                  gap: 2vw;
                  }
-                                        
-                 
+                                                         
                  .wok1aa, .wok2aa, .wok3aa, .wok4aa{
-                  margin-top:7vw;
+                  margin-top:13vw;
                   font-size: 2vw;
                  }
                  .wok1 p, .wok2 p, .wok3 p, .wok4 p{
@@ -3127,11 +3286,6 @@ gap: 2vw;}
                                          width: 90vw;
                                          justify-content: center;
                                      }
-
-                                     
-                                    
-                                     
-
                                      .bblog3{
                                       width: 45vw;
                                       height: auto;
@@ -3157,6 +3311,11 @@ gap: 2vw;}
                                         .log0{
                                           font-size: 1.2vw;
                                         }
+                                            .oc0{
+                                              width: 15vw;
+                                              height: 10vw;
+                                            }
+
                                         .oc1{
                                           width: 40vw;
                                         }
@@ -3167,8 +3326,18 @@ gap: 2vw;}
                                           width: 2vw;
                                           
                                         }
+                                            .ogov{
+                                              justify-content: center;
+                                              align-items: center;
+                                            }
+
+                                            .blog3{
+                                              margin-top: 5vw;
+                                            }
+
                                         .oc11, .oc12{
                                           font-size: 1vw;
+                                          margin-top: 1vw;
                                         }
                                         .f0t1{
                                           width: 95vw;
@@ -3232,7 +3401,8 @@ gap: 2vw;}
                                              }
 
                                              .gt1 img, .gt2 img{
-                                              width: 10vw;
+                                              width: 5vw;
+                                              height: 5vw;
                                              }
 
 
@@ -3244,6 +3414,9 @@ gap: 2vw;}
                                               font-size: 1vw;
                                           
       font-family: 'Open Snans', sans-serif;
+                                             }
+                                             .gt2{
+                                              padding-bottom: 2vw;
                                              }
                                      
                                              .a1{
@@ -3313,28 +3486,77 @@ gap: 2vw;}
                   overflow-x: hidden;
                 
                 }
+                /*-----------home*/
                 .a2, .a3{
                   font-size: 7vw;
                 }
-                .a4{
-                  font-size: 4vw;
+                .a3{
+                  margin-top: 0;
                 }
+                .a4{
+                  font-size: 2.5vw;
+                }
+                .home{
+                  height: 70vw;
+                }
+                  .hh1 button{
+                    padding-top: 3vw;
+                    padding-bottom:3vw ;
+                    font-size: 2.5vw;
+                  }
+                  .hh1 button img{
+                    width: 5vw;
+                  }
+
+                /*-----------home*/
+                /*-----------about*/
+
                 .t1{
                   font-size: 6vw;
+                  font-weight:lighter;
                 }
                 .t2 p{
-                  font-size: 4vw;
+                  font-size: 3.5vw;
                   width: 80vw;
                 }
                 .t3{
-                  font-size: 4vw;
+                  font-size: 3.5vw;
                   width: 85vw;
                 }
-              
-   
-    
-   
+                .about button{
+                  height: auto;
+                  padding-top: 2vw;
+                  padding-bottom: 2vw;
+                  font-weight: bold;
+                  transition: 1s ease-in-out;
+                }
+                .about button:hover{
+                  background-color: rgb(235, 123, 100);
+                }
+                /*-----------about*/
 
+                /*-----------info*/
+                  .fang{
+            height: 17vw;
+           }
+               .lmao{
+                 background-size: contain;
+                  background-repeat: no-repeat;
+                  
+                  background-image: url(images/rrfvr5drv5vr.jpg);
+                  position: relative;
+                  z-index: 8;
+                  width: 95vw;
+               }
+               .dk p{
+                font-size: 3.5vw;
+                margin-left: 2vw;
+               }
+               .f1{
+                  font-size: 7vw;
+                  margin-left: 3vw;
+                  margin-top: 15vw;
+                 }
               .s1{
           
                 display: flex;
@@ -3342,16 +3564,19 @@ gap: 2vw;}
                 justify-content: center;
                 align-items: center;
               }
-
               .s1 img{
                 width: 90vw;
+              }
+              .ainfo{
+                position: relative;
+                z-index: 10;
+                top: 15vw;
               }
               .info{
                 background-image: none;
               }
-
               .i1a{
-                height: 50vw;
+                height: 40vw;
                 width: 90vw;
                 justify-content: center;
                 align-items: center;
@@ -3361,11 +3586,8 @@ gap: 2vw;}
               .info{
                 height: auto;
               }
-              
-               
-              
                  .sx{
-                  height: 50vw;
+                  height: 40vw;
                   width: 30vw;
                   border-radius: 2vw 0 0 2vw;
                   background-color: rgb(235, 123, 100);
@@ -3373,75 +3595,71 @@ gap: 2vw;}
                   justify-content: center;
                   align-items: center;
                  }
-
-                 .omo:hover{
+                .omo :hover{
                   border-left: 1px solid white;
                  }
-
-                 .omo{
+                   .omo{
                   width: 60vw;
+                  height: 30vw;
                   text-align: center;
                   display: flex;
                   flex-direction: column;
                   justify-content: center;
                   align-items: center;
                  }
-
-                 .omo p{
-                        font-size: 4vw;
+                  .omo p{
+                        font-size: 3.5vw;
                         text-align:left;
-                        width: 40vw;
+                        width: 55vw;
                  }
-
-                 .omo1{
+               .omo1{
                   font-size: 5vw;
                   text-align: left;
-                  width: 40vw;
+                  width: 55vw;
+                  font-weight: lighter;
 
                  }
-
-                 .f1{
-                  font-size: 5vw;
-                 }
-
-                 .dk p{
-                  font-size: 4vw;
-                 }
-
                  .eex{
                   width: 95vw;
                   display: flex;
-                  background-size: contain;
-                  background-repeat: no-repeat;
                   flex-direction: column;
                   justify-content: center;
                   align-items: center;
-                  background-image: url(images/rrfvr5drv5vr.jpg);
                   gap: 3vw;
                  }
-
+                 /*-----------info*/
+                    /*-----------price*/
+                  .prices{
+                    margin-top: 0;
+                  }
                  .p41a{
-                 font-size: 4vw;}
-
-
+                 font-size: 5vw;
+                padding-top: 4vw;
+                }
                 .p41c{
                   font-size: 3vw;}
-
-
-                  .p2, .p3{
-                  height: auto;}
-
-
-                  .p1{font-size: 5vw;
-                  }
-              
+                  .p2, .p3 {
+                  height: auto;
+                }
+                 .pl{
+                  padding-bottom: 5vw;
+                  font-weight:lighter ;
+                  font-size: 3vw;
+                 }
+                    /*-----------price*/
+                    /*-----------schedule*/
+                    .ede{
+                      padding-bottom: 8vw;
+                    }   
+                    
                 .s0{
                 font-size: 5vw;
                 }
-
-             
              .s41a{
+              padding-top: 5vw;
                font-size: 5vw;
+               display: flex;
+               flex-direction: column;
              }
              .s41{
               font-size: 4vw;
@@ -3449,58 +3667,87 @@ gap: 2vw;}
              .s2, .s3{
               height: auto;
              }
-             
              .s4af{
-             font-size: 4vw;}
-             
+             font-size: 4.5vw;
+            }
               .s41bb{
-              font-size: 3vw;
+              font-size: 4.5vw;
               }
-                  .s41cb{
+                   .s41bb button, .s41bbc button{
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    font-size: 4.5vw;
+                   }
+                   .s41cb{
                   font-size: 3vw;}
-      .u1{
+                    /*-----------schedule*/
+                    /*-----------unknown*/
+                  .u1{
       font-size: 7vw;
-    margin-left: 5vw;}
+    margin-left: 5vw;
+    font-weight: lighter;
+  }
              .u2{
              font-size: 5vw;
             margin-left: 5vw;}
 
                 .unknown p{
-                font-size: 4vw;
-              margin-left: 5vw;}
-         
+                font-size: 3.5vw;
+              margin-left: 5vw;
+              color: #fff;
+            }
                   .unknown{
-                    height: 50vw;
+                    height: 70vw;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4vw;
                   }
+                 .u3{
+                  display: flex;
+                  align-items: center;
+                  gap: 4vw;
+                 }
+                .u3 span{
+                font-size: 7vw;
+              margin-left: 5vw;
+              font-weight: lighter;
+              color: rgb(220, 123, 100);
+            }
+            .u3 button{
+              height: 7vw;
+              padding-left: 5vw;
+              padding-right: 5vw;
+              font-weight: lighter;
+              font-size: 5vw;
+              border: 0.5px solid rgba(250, 250, 250, 0.6) ;
+              
+            }
+                    /*-----------unknown*/
 
-
-                .u3{
-                font-size: 4vw;
-              margin-left: 5vw;}
-
+                    /*-----------haircut*/
+          
             .haircut{
             display: flex;
-            flex-direction: column;}
-
-                  
-
+            flex-direction: column;
+            align-items: start;
+          }
        .h1, .h2{
-        width: 90vw;
+        width: 80vw;
+         height: 80vw;
+         margin-left: 7vw;
        }
        .h1a, .h2a{
         font-size: 5vw;
        }
        .h1 p, .h2 p{
-            font-size: 4vw;
+            font-size: 3vw;
        }
            #ddz{
-            font-size: 4vw;
+            font-size: 3vw;
            }
-
            .h1a, .h2a{
-            margin-top: 32vw;
+            margin-top: 47vw;
            }
-
            #ddz img{
             width: 3vw;
            }
@@ -3512,36 +3759,41 @@ gap: 2vw;}
                 font-size: 5vw;
                }
                .work2{
-                font-size: 3vw;
+                font-size: 4vw;
+                padding-top: 2vw;
+                padding-bottom: 4vw;
+               
                }
                .work3{
                 font-size: 3vw;
+                 padding-left: 4vw;
+                 padding-right: 4vw;
+                 padding-top: 2vw;
+                 padding-bottom: 2vw;
                }
                .work3 img{
-                width: 3vw;
+                width: 5vw;
                }
-
                .works{
                 display: flex;
                 flex-direction: column;
+                align-items: start;
                }
-
            .wok{
             display: flex;
             flex-direction: column;
+            margin-left: 5vw;
            }
-
                 .wok1, .wok2, .wok3, .wok4{
                   background-size: cover;
                 }
-
-
            .wok1, .wok1a, .wok2, .wok2a, .wok3, .wok3a, .wok4, .wok4a{
-            width: 90vw;
+            width: 80vw;
+            height: 80vw;
            }
            .wok1aa, .wok2aa, .wok3aa, .wok4aa{
             font-size: 5vw;
-            margin-top: 30vw;
+            margin-top: 50vw;
            }
            .wok1 p .wok2 p, .wok3 p, .wok4 p{
             font-size: 3vw;
@@ -3549,16 +3801,22 @@ gap: 2vw;}
            .wok1 button, .wok2 button, .wok3 button, .wok4 button{
             font-size: 3vw;
            }
-
            .wok1 button img, .wok2 button img, .wok3 button img, .wok4 button img{ 
             width: 3vw;
+           }
+           .team{
+            background-image: url(images/hyh.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 5vw;
            }
 
            .m1{
             font-size: 5vw;
            }
            .m2{
-            font-size: 3vw;
+            font-size: 3.5vw;
+            width: 80vw;
            }
            .meat{
             display: flex;
@@ -3568,8 +3826,9 @@ gap: 2vw;}
            }
 
            .te1, .te1a, .te2, .te2a, .te3, .te3a, .te4, .te4a{
-            width: 90vw;
-            height: 60vw;
+            width: 80vw;
+            height: 80vw;
+            margin-right: 15vw;
            }
 
            .te1b, .te2b, .te3b, .te4b{
@@ -3578,11 +3837,28 @@ gap: 2vw;}
            .te1c, .te2c, .te3c, .te4c{
             font-size: 3vw;
            }
+           .meme{
+            background-image: url(images/hyh.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 5vw;
+           }
+                  .meme button{
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                    padding-top: 2vw;
+                    padding-bottom: 2vw;
+                  }
+               .meme2{
+                height: 1000vw;
+               }
+
            .comm32{
             display: none;
            }
            .comm31{
-            width: 80vw;
+            width: 87vw;
+            margin-right: 7vw;
            }
            .comm31 p{
             font-size: 4vw;
@@ -3597,27 +3873,41 @@ gap: 2vw;}
             display: flex;
             flex-direction: column;
             align-items: start;
-            margin-left: 2vw;
             font-size: 4vw;
            }
-           .comm2 p, .comm2 button{
+           .comm2 button{
             font-size: 4vw;
+            padding-left:4vw ;
+            padding-right: 4vw;
+            padding-top:2vw ;
+            padding-bottom:2vw ;
+            margin-left: 1.5vw;
            }
+             .comm2 button img{
+              width: 5vw;
+             }
+
+
            .comm1{
             font-size: 5vw;
            }
            .comm2 p{
-            width: 80vw;
+            width: 85vw;
+            font-size: 3.5vw;
            }
            .video p{
             font-size: 4vw;
-            width: 80vw;
+            width: 95vw;
            }
            .video button img{
             width: 10vw;
            }
             .video button{
-              border-radius: 5vw;
+              width: 10vw;
+              border-radius: 6vw;
+            }
+            .video{
+              height: 80vw;
             }
 
            .video div{
@@ -3642,26 +3932,27 @@ gap: 2vw;}
            }
            .log1, .log2{
             font-size: 5vw;
-            
+            margin-left: 2vw;
            }
            .log1 img, .log2 img{
             width: 5vw;
            }
            .log0{
             font-size: 6vw;
-            text-align: center;
+            font-weight: lighter;
+            margin-left: 2vw;
+            padding-right: 3vw;
            }
            .bblog3{
             height: auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+
            }
            .oc1{
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
            }
            .oc0{
@@ -3672,14 +3963,16 @@ gap: 2vw;}
             font-size: 5vw;
             display: flex;
             justify-content: center;
-            align-items: center;
+            margin-left: 2vw;
            }
            .oc11 img, .oc12 img{
             width: 5vw;
            }
            .oc10{
             font-size: 5vw;
-            text-align: center;
+            font-weight: lighter;
+            margin-left: 2vw;
+            padding-right: 3vw;
            }
            .f0t1{
             display:flex ;
@@ -3689,13 +3982,15 @@ gap: 2vw;}
            }
            .f0t{
             align-items: start;
-            margin-right: 17vw;
+            margin-right: 30vw;
+            width: 94vw;
            }
            .f0t1a div{
             font-size: 7vw;
            }
            .f0t1a p{
             font-size: 5vw;
+            font-weight: lighter;
            }
            .f0t1b1, .f0t1b2{
             font-size: 5vw;
@@ -3710,15 +4005,18 @@ gap: 2vw;}
            .yes{
             display: flex;
             flex-direction: column;
+            width: 94vw;
            }
            .yes2{
             margin-left: 0;
            }
            .yes1 p, .yes2 p{
             font-size: 3vw;
+            font-weight: lighter;
            }
            .yes1 div, .yes2 div{
-            font-size: 5vw;
+            font-size: 6vw;
+            font-weight: lighter;
            }
            .meme button{
             font-size: 4vw;
@@ -3734,15 +4032,28 @@ gap: 2vw;}
            #muj{
             font-size: 6vw;
            }
-           .home{
-            height: 75vw;
-           }
-           .fang{
-            height: 5vw;
-           }
+          
+           
            #muj2{
             font-size: 5vw;
            }
+           .f00t .fd{
+            width: 94vw;
+           }
+           .gt1 img, .gt2 img{
+            width: 20vw;
+            height: 20vw;
+           }
+             .gt1{
+              padding-top: 4vw;
+             }
+
+           .gt2{
+            padding-top: 3vw;
+            padding-bottom: 7vw;
+           }
+           
+
            
 
 
@@ -3751,7 +4062,7 @@ gap: 2vw;}
 }
 </style>
 </head>
-<div id="loader">
+<div  id="loader">
     <div class="loader">
       <img src="images/icons8-scissors-100.png" alt="Loading 1">
       <img src="images/icons8-barbershop-50.png" alt="Loading 2">
@@ -4010,7 +4321,7 @@ gap: 2vw;}
             <div class="p41b">125$</div>
           </div>
           <div class="p41c">clean and simple 30-40 minutes</div>
-          <hr>
+          <div class="fd"></div>
         </div>
         
           <div class="p41">
@@ -4019,7 +4330,7 @@ gap: 2vw;}
             <div class="p41b">145$</div>
           </div>
           <div class="p41c">haircuts blends to skin</div>
-          <hr>
+          <div class="fd"></div>
         </div>
         <div class="p41">
           <div class="p41a">
@@ -4027,7 +4338,7 @@ gap: 2vw;}
             <div class="p41b">75$</div>
           </div>
           <div class="p41c">clipers only cut all over</div>
-          <hr>
+          <div class="fd"></div>
         </div>
         <div class="p41">
           <div class="p41a">
@@ -4035,7 +4346,7 @@ gap: 2vw;}
             <div class="p41b">75$</div>
           </div>
           <div class="p41c">junior under 14</div>
-          <hr>
+          <div class="fd"></div>
         </div>
         <div class="p41">
           <div class="p41a">
@@ -4075,7 +4386,7 @@ gap: 2vw;}
             <div class="s41b">calender</div>
           </div>
           <div class="s41c"></div>
-          <hr>
+           <div class="fd"></div>
         </div>
 
            <div class="s41">
@@ -4087,7 +4398,7 @@ gap: 2vw;}
             <div class="s41bb"><button>unavailable</button></div>
           </div>
           <div class="s41cb">9 spaces available</div>
-          <hr>
+          <div class="fd"></div>
         </div>
          <div class="s41">
           <div class="s41ab">
@@ -4098,7 +4409,7 @@ gap: 2vw;}
             <div class="s41bbc"><button>book appointment</button></div>
           </div>
           <div class="s41cb">9 spaces available</div>
-          <hr>
+          <div class="fd"></div>
         </div>
          <div class="s41">
           <div class="s41ab">
@@ -4109,9 +4420,9 @@ gap: 2vw;}
             <div class="s41bb"><button>unavailable</button></div>
           </div>
           <div class="s41cb">9 spaces available</div>
-          <hr>
+          <div class="fd"></div>
         </div>
-         <div class="s41">
+         <div class="s41  ede">
           <div class="s41ab">
             <div class="s4af">
             <img src="images/icons8-timer-30.png" alt="">
@@ -4120,7 +4431,6 @@ gap: 2vw;}
             <div class="s41bbc"><button>book appointment</button></div>
           </div>
           <div class="s41cb">9 spaces available</div>
-          <hr>
         </div>
          
 
@@ -4423,13 +4733,17 @@ window.addEventListener("load", () => {
     d.addEventListener('click', () =>{
        c.classList.remove('book');
        c.classList.add('sook');
+       d.classList.add('lamb')
        cc.classList.add('pook');
     });
   
      window.addEventListener('scroll', () => {
       c.classList.add('book')
       dd.classList.remove('fook');
+      d.classList.remove('lamb')
       cc.classList.add('pook');
+        ed.classList.remove('lamb')
+
      })
 
      dd.addEventListener('click', () =>{
@@ -4440,6 +4754,7 @@ window.addEventListener("load", () => {
        ed.addEventListener('click', () =>{
        cc.classList.remove('pook');
         cc.classList.add('gook');
+        ed.classList.add('lamb')
         c.classList.add('book')
 
     });
